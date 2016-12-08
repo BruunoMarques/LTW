@@ -8,3 +8,7 @@
 <?php
     require_once(TEMPLATES_PATH . "/footer.php");
 ?>
+
+<?php
+    require_once(TEMPLATES_PATH . "/home.php");
+?>
