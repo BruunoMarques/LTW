@@ -7,11 +7,20 @@
 </head>
 
 <body>
-  <div id="header">
-    <h1>Header (Meter o nome do site)</h1>
-    
+    <header>
+    <div id="fast search">
+      <input type="text" name="search" placeholder="Search restaurant..">
+      <select>
+        <option disabled selected value> -- select an option -- </option>
+        <option value="owner">Owner</option>
+        <option value="restaurant">Restaurant</option>
+        <option value="reviewer">Reviewer</option>
+      </select>
+      <button type="button">Search</button>
+    </div>
     <ul class="nav global">
       <li><a href="#">Home</a></li>
-      <li><a href="#">Articles</a></li>
-      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Restaurants</a></li>
+      <li><a href="#">About</a></li>
     </ul>
+  </header>
