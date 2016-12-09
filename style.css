@@ -1,0 +1,48 @@
+html {
+  background-color:white;
+}
+
+body {
+  width: 100%;
+  margin: 0px auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+  background-color: darkslategray;
+}
+
+#home{  
+ text-align: center;
+ display: block;
+ margin: 30px;
+}
+
+
+
+h1, h2, h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-rendering: auto;
+ 
+}
+
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+#restaurants{
+  padding-left: 50px;
+  text-align: center;
+}
+
+.top-item{
+ text-align: center;
+ display: inline-block;
+ padding: 10px;
+ margin: 10px;
+}
+
+.header{
+  display: inline-block;
+}
