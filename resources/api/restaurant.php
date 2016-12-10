@@ -2,7 +2,7 @@
 include_once('../project/resources/api/connection.php');
 
 
-function getRestaurant(){
+function getRestaurants(){
 		global $db;
 		$stmt = $db->prepare('SELECT * FROM Restaurant');
 		try {

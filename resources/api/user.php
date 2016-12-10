@@ -35,7 +35,7 @@ function newUser($username,$password,$email){
 	global $db;
 	
 	$addUser=$db->prepare('INSERT INTO User VALUES(NULL,?,?,?)');
-	$addUser->execute([$firstNamepassword,$email]);
+	$addUser->execute([$firstName,$password,$email]);
 	
     return $addUser->errorCode();
 }	
