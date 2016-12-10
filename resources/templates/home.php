@@ -1,19 +1,21 @@
-<div id="home">
-				<h1>Find the best restaurant for you!!</h1>
-				<img src="https://ipsumimage.appspot.com/500x500,ff7770" alt="500x500">
-				<div class="search">
-				<input id = "SearchBox" type="text" name="Pesquisar" onfocus value= "Pesquisar..."
-				</div>
+<div class="home">
+				<h1> NOME DA PAG</h1>
+				<h2>Find the best restaurant for you!!</h2>
 
-<div id="restaurants">
-				<p> Top 5 Restaurants in town! </p>
+ <div class="form">
+        <input type='search' name='search' placeholder='Search restaurant' id='search'>
+      
+</div>
+</div>
 
+<div class="restaurants">
+				<h2> Top 5 Restaurants in town! </h2>
 				<div class="top-item">
-				<p> The best restaurant in town !! Top 1! </p>
+				<p> Top 1! </p>
 				<p> CLASSIFICACAO </p>
-				<img src="http://ipsumimage.appspot.com/300x200,ff0077" alt="300x200">
+				<img src="http://ipsumimage.appspot.com/200x200,ff0077" alt="200x200">
 				<ul>
-					<li><a href="theRest.html">see more information about this restaurant</a></li>
+					<li><a href="theRest.html">More information</a></li>
 					<li><a href="reviews.html">reviews</a></li>
 					<li><a href="shares.html">share</a></li>
 				</ul>
@@ -23,9 +25,9 @@
 				<div class="top-item">
 				<p> Top 2 !! </p>
 				<p> CLASSIFICACAO </p>
-				<img src="http://ipsumimage.appspot.com/300x200,ff0077" alt="300x200">
+				<img src="http://ipsumimage.appspot.com/200x200,ff0077" alt="200x200">
 				<ul>
-					<li><a href="theRest.html">see more information about this restaurant</a></li>
+					<li><a href="theRest.html">More information</a></li>
 					<li><a href="reviews.html">reviews</a></li>
 					<li><a href="shares.html">share</a></li>
 				</ul>
@@ -34,9 +36,9 @@
 				<div class="top-item">
 				<p> Top 3 !! </p>
 				<p> CLASSIFICACAO </p>
-				<img src="http://ipsumimage.appspot.com/300x200,ff0077" alt="300x200">
+				<img src="http://ipsumimage.appspot.com/200x200,ff0077" alt="200x200">
 				<ul>
-					<li><a href="theRest.html">see more information about this restaurant</a></li>
+					<li><a href="theRest.html">More information</a></li>
 					<li><a href="reviews.html">reviews</a></li>
 					<li><a href="shares.html">share</a></li>
 				</ul>
@@ -45,9 +47,9 @@
 				<div class="top-item">
 				<p> Top 4 !! </p>
 				<p> CLASSIFICACAO </p>
-				<img src="http://ipsumimage.appspot.com/300x200,ff0077" alt="300x200">
+				<img src="http://ipsumimage.appspot.com/200x200,ff0077" alt="200x200">
 				<ul>
-					<li><a href="theRest.html">see more information about this restaurant</a></li>
+					<li><a href="theRest.html">More information</a></li>
 					<li><a href="reviews.html">reviews</a></li>
 					<li><a href="shares.html">share</a></li>
 				</ul>
@@ -56,9 +58,9 @@
 				<div class="top-item">
 				<p> Top 5 !! </p>
 				<p> CLASSIFICACAO </p>
-				<img src="http://ipsumimage.appspot.com/300x200,ff0077" alt="300x200">
+				<img src="http://ipsumimage.appspot.com/200x200,ff0077" alt="200x200">
 				<ul>
-					<li><a href="theRest.html">see more information about this restaurant</a></li>
+					<li><a href="theRest.html">More information</a></li>
 					<li><a href="reviews.html">reviews</a></li>
 					<li><a href="shares.html">share</a></li>
 				</ul>
@@ -67,4 +69,3 @@
 				</div>
 
 	</div>
-</div>

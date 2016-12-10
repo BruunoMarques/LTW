@@ -13,3 +13,9 @@
 <?php
     require_once(TEMPLATES_PATH . "/footer.php");
 ?>
+
+<style>
+<?php 
+include 'style.css'; 
+?>
+</style>

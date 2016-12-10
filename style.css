@@ -6,16 +6,39 @@ body {
   width: 100%;
   margin: 0px auto;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
-  background-color: darkslategray;
 }
 
-#home{  
+.home{  
  text-align: center;
  display: block;
- margin: 30px;
+ padding-top: 100px;
+ padding-bottom: 250px;
+ background-image: url("http://img2.10bestmedia.com/static/img/placeholder-restaurants.jpg");
+  /*-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;*/
+  background-size: cover;
 }
 
+.home #search {
+  border: none;
+  height: 25px;
+  padding: 25px;
+  width: 40%;
+  border-radius: 25px;
+  text-indent: 20px;
+  font-size: 25px;
+  cursor: pointer;
+  transition: background .3s ease-out, width .3s ease-out;
+  background: white url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAXVJREFUeNqkk80rhFEUxq+v8ZF8JGxlplnZKNnYzAZh42Nja4U/gNiYslJ2ypookr/BCAv2ZpryGUpYMIkVGc+t563j7d6TmTn1673ve5/3uffcc64xfyMCZkEK5MAPuAc7oM8UGN3gGuQVtkDtf8x6wYf48QDMg2mwyl3KuYhmVi12ZtMcBUlwDq5AlJo1YZrUDGeEcAycifcv0CO0+/z+CVp8himRyhLHj2AStIW0HSyU1Uz5DF8omANpjieUjLLUrLgmy0Ejx2+s4Dc4UQxzfNa7JiuZnk0lDgZAE3ft20CU42ffiptM4Y7V1GJEFCzhEyWEaF0xawe31F2CCm3lXWG6BzpDaQ4LM3vGg+LsnVEn2ifP1rDVPBVdEJjZvu1njy5qplVgOXQFJRcs2hB4F9835FUscxg38/C7QAN4AsdspRrw6rjLR2CccwXHgpJB3BQZ2x7Tm2INbcqHDsOMKSFa2Y+B2QOImRIjxrNLB2a/AgwAw3yFRFLxpoQAAAAASUVORK5CYII=) no-repeat 15px 15px;
+}
 
+.home #search:focus {
+	background: white url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAXVJREFUeNqkk80rhFEUxq+v8ZF8JGxlplnZKNnYzAZh42Nja4U/gNiYslJ2ypookr/BCAv2ZpryGUpYMIkVGc+t563j7d6TmTn1673ve5/3uffcc64xfyMCZkEK5MAPuAc7oM8UGN3gGuQVtkDtf8x6wYf48QDMg2mwyl3KuYhmVi12ZtMcBUlwDq5AlJo1YZrUDGeEcAycifcv0CO0+/z+CVp8himRyhLHj2AStIW0HSyU1Uz5DF8omANpjieUjLLUrLgmy0Ejx2+s4Dc4UQxzfNa7JiuZnk0lDgZAE3ft20CU42ffiptM4Y7V1GJEFCzhEyWEaF0xawe31F2CCm3lXWG6BzpDaQ4LM3vGg+LsnVEn2ifP1rDVPBVdEJjZvu1njy5qplVgOXQFJRcs2hB4F9835FUscxg38/C7QAN4AsdspRrw6rjLR2CccwXHgpJB3BQZ2x7Tm2INbcqHDsOMKSFa2Y+B2QOImRIjxrNLB2a/AgwAw3yFRFLxpoQAAAAASUVORK5CYII=) no-repeat 15px 15px;
+	width: 60%;
+	outline: none;
+	cursor: text;
+}
 
 h1, h2, h3 {
   font-family: Arial, Helvetica, sans-serif;
@@ -31,18 +54,17 @@ h2 {
   font-size: 50px;
 }
 
-#restaurants{
-  padding-left: 50px;
-  text-align: center;
+.restaurants{
+ margin: 5%;
+ text-align: center;
 }
 
 .top-item{
- text-align: center;
+ text-align: left;
  display: inline-block;
- padding: 10px;
- margin: 10px;
+ margin: 15px;
 }
 
-.header{
-  display: inline-block;
+.top-item li {   
+  list-style-type: none;
 }
