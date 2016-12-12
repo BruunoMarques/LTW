@@ -27,4 +27,14 @@ function getRestaurantById(){
 	$result = $stmt->fetchAll();
 	return $result;
 }	
+
+
+function addRestaurant($idOwner,$name,$inf,$phonenumber,$averagecost,$schedule,$adress,$categories){
+	global $db;
+	
+	$addUser=$db->prepare('INSERT INTO User VALUES(NULL,?,?,?,?,?,?,?,?)');
+	$addUser->execute([$username,$firstname,$lastname,$password,$email]);
+	
+    return $addUser->errorCode();
+}	
 ?>

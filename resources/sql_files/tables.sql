@@ -2,6 +2,8 @@ CREATE TABLE IF NOT EXISTS USER(
 
     idUser INTEGER PRIMARY KEY AUTOINCREMENT,
     username TEXT,
+    firstname TEXT,
+    lastname TEXT,
     password TEXT,
     email TEXT
 );
@@ -12,9 +14,8 @@ CREATE TABLE IF NOT EXISTS RESTAURANT(
     idOwner INTEGER,
     name TEXT,
     inf TEXT,
-    photos TEXT,
-    phoneNumber TEXT,
-    averageCost TEXT,
+    phonenumber TEXT,
+    averagecost TEXT,
     schedule TEXT,
     adress TEXT,
     categories TEXT,
@@ -30,4 +31,17 @@ CREATE TABLE IF NOT EXISTS REVIEW(
     rating INTEGER,
     FOREIGN KEY (idRestaurant) REFERENCES RESTAURANT(idRestaurant),
     FOREIGN KEY (idReviewer) REFERENCES USER(idUser)
+);
+
+CREATE TABLE profilepic(
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	username VARCHAR REFERENCES user(username),
+	title VARCHAR DEFAULT ""
+);
+
+
+CREATE TABLE restaurantpic (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	idRestaurant INTEGER REFERENCES restaurant(id),
+	title VARCHAR DEFAULT ""
 );

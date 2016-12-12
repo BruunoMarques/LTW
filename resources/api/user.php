@@ -26,16 +26,16 @@ function getUserById(){
     } catch (PDOException $e) {
       return $e->getMessage();
     }
-	$result = $stmt->fetch();
+	$result = $stmt->fetchAll();
 	return $result;
 }
 
 
-function newUser($username,$password,$email){
+function newUser($username,$firstname,$lastname,$password,$email){
 	global $db;
 	
 	$addUser=$db->prepare('INSERT INTO User VALUES(NULL,?,?,?)');
-	$addUser->execute([$firstName,$password,$email]);
+	$addUser->execute([$username,$firstname,$lastname,$password,$email]);
 	
     return $addUser->errorCode();
 }	
