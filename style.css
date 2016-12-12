@@ -1,6 +1,9 @@
 html {
   background-color:white;
+  height: 100%;
+  width: 100%;
 }
+
 
 body {
   width: 100%;
@@ -8,16 +11,64 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
 }
 
+/*Header*/
+header {
+  height: 10%;
+}
+
+.logs ul{
+  list-style: none;
+  background-color:white;
+	width: 100%;
+	margin: 0px;
+  padding: 0px;
+}
+
+.logs li{
+  font-family: 'Oswald', sans-serif;
+	height: 100%;
+	line-height: 100%;
+	font-size: 18px;
+	display: inline-block;
+	margin:10px;
+  padding-right: 30px;
+  padding-left: 10px;
+	text-align: left;
+  border-right: 1px solid black;
+  }
+
+.logs ul  li:nth-last-child(2){
+    border:none;
+}
+
+.logs ul  li:nth-last-child(3){
+    border:none;
+}
+
+.logs ul > li:nth-last-of-type(-n+2) {
+    float:right;
+}
+
+.logs a {
+  text-decoration: none;
+  color: black;
+}
+
+.logs a:hover{
+  font-weight: bold;
+}
+
+/*Home*/
+
 .home{  
  text-align: center;
  display: block;
- padding-top: 100px;
- padding-bottom: 250px;
- background-image: url("http://img2.10bestmedia.com/static/img/placeholder-restaurants.jpg");
-  /*-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;*/
-  background-size: cover;
+ padding-top: 8%;
+ padding-bottom: 8%;
+ background-image: url("http://www.aranyhaletterem.eu/wp-content/uploads/revslider/home1-slider/slide1_bg.jpg");
+ background-size: cover;
+ background-position: bottom;
+ background-attachment: fixed;
 }
 
 .home #search {
@@ -47,13 +98,29 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 70px;
+  text-shadow: 0px 2px 4px black;
+	color: white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 90px;
 }
 
 h2 {
+  text-shadow: 0px 2px 4px black;
+	color: white;
+  font-family: 'Tangerine', serif;
   font-size: 50px;
 }
 
+footer{
+  height: 0;
+  font-size: 10px;
+  float: right;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+/*
 .restaurants{
  margin: 5%;
  text-align: center;
@@ -68,3 +135,11 @@ h2 {
 .top-item li {   
   list-style-type: none;
 }
+
+.tab-group {
+  list-style:none;
+  padding:0;
+  margin:0 0 40px 0;
+}*/
+
+

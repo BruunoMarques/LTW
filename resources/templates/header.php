@@ -8,6 +8,7 @@
 
 <body>
     <header>
+    <!--
     <div id="fast search">
       <input type="text" name="search" placeholder="Search restaurant..">
       <select>
@@ -18,9 +19,16 @@
       </select>
       <button type="button">Search</button>
     </div>
-    <ul class="nav global">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Restaurants</a></li>
-      <li><a href="#">About</a></li>
+    -->
+    <div class="logs">
+    <ul>
+      <li> <a href="#">Home</a></li>
+      <li> <a href="#">Restaurants</a></li>
+      <li> <a href="#">Top 5 Restaurants</a></li>
+      <li> <a href="#">About</a> </li>
+      <li> <a href="#">Login</a></li>
+      <li> <a href="#">Register</a></li>
     </ul>
+    </div>
+
   </header>

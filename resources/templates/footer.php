@@ -1,7 +1,7 @@
-<div id="footer">
+<footer>
 
-<p>Copyright © 2016 LTW </p>
-</div>
+<p>Copyright © 2016 LTW</p>
+</footer>
 
 </body>
 

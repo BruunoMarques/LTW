@@ -1,5 +1,5 @@
 <div class="home">
-				<h1> NOME DA PAG</h1>
+				<h1> Ratatouille </h1>
 				<h2>Find the best restaurant for you!!</h2>
 
  <div class="form">
@@ -8,6 +8,7 @@
 </div>
 </div>
 
+<!--
 <div class="restaurants">
 				<h2> Top 5 Restaurants in town! </h2>
 				<div class="top-item">
@@ -69,3 +70,4 @@
 				</div>
 
 	</div>
+-->
