@@ -13,6 +13,11 @@ CREATE TABLE IF NOT EXISTS RESTAURANT(
     name TEXT,
     inf TEXT,
     photos TEXT,
+    phoneNumber TEXT,
+    averageCost TEXT,
+    schedule TEXT,
+    adress TEXT,
+    categories TEXT,
     FOREIGN KEY (idOwner) REFERENCES USER(idUser)
 );
 
