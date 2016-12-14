@@ -19,9 +19,9 @@ $config = array(
     ),
     "paths" => array(
         "resources" => array (
-            "api" => "resources/api/",
-            "sql" => "resources/sql_files/",
-            "templates" => "resources/templates/"
+            "api" => realpath("resources/api/"),
+            "sql" => realpath("resources/sql_files/"),
+            "templates" => realpath("resources/templates/")
         ),
         "images" => array(
             "content" => "images/content/",
