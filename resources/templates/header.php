@@ -23,7 +23,7 @@
     	<div class="logs">
     		<ul>
     	  		<li> <a href="./">Home</a></li>
-    	  		<li> <a href="">Restaurants</a></li>
+    	  		<li> <a href="./?content=restaurants">Restaurants</a></li>
     	  		<li> <a href="">Top 5 Restaurants</a></li>
     	  		<li> <a href="">About</a> </li>
     	  		<?php

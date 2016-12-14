@@ -1,7 +1,7 @@
 <?php
 
-include_once("../api/user.php");
-include_once("../api/connection.php");
+include_once($config["paths"]["resources"]["api"]."user.php");
+include_once($config["paths"]["resources"]["api"]."connection.php");
 
 $username= trim($_POST["username"]);
 $password = $_POST["password"];
@@ -17,7 +17,7 @@ if (password_verify($password, $userpassword)){
 	
 	if( $curruser != null ){
 		
-		session_start();	
+		session_start();
 		
 			$currname = $currentUser['firstname'];
 			$currname .=" ";

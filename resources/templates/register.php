@@ -1,4 +1,4 @@
-<form id= "form" action="../api/registeruser.php" method="post">
+<form id= "form" action="<?php echo $config["paths"]["resources"]["api"]?>registeruser.php" method="post">
   <h1>Register</h1>
   <ul>
     <li>

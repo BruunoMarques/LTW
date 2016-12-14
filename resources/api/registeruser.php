@@ -1,6 +1,6 @@
 <?php
 
-include_once("../api/user.php");
+include_once($config["paths"]["resources"]["api"]."user.php");
 
 
 $username = $_POST["username"];
