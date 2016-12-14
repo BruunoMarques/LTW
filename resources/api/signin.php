@@ -7,8 +7,6 @@ $password = $_POST['password'];
 
 
 $userpassword = getUserPassword($username)[0];
-var_dump($password);
-var_dump($userpassword);
 
 
 if (password_verify($password, $userpassword)){
@@ -32,7 +30,7 @@ if (password_verify($password, $userpassword)){
 			$_SESSION['name'] = $currname;
 			$_SESSION['id'] = $curruser['idUser'];
 					
-			header("index.php");
+			header("Location:index");
 	}
 	
 	
