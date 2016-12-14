@@ -1,10 +1,24 @@
 <?php    
     // load up your config file
     require_once("resources/config.php");
+
+	require_once($config["paths"]["resources"]["templates"]. "header.php"); 
      
-    require_once(TEMPLATES_PATH . "/header.php");
-    require_once(TEMPLATES_PATH . "/home.php"); 
-    require_once(TEMPLATES_PATH . "/footer.php");
+    switch($_GET["content"]){
+        case "register":
+			require_once($config["paths"]["resources"]["templates"]. "register.php"); 
+            break;
+		case "login":
+			require_once($config["paths"]["resources"]["templates"]. "login.php"); 
+            break;
+		case "profile":
+			require_once($config["paths"]["resources"]["templates"]. "profile.php");
+			break;
+        default:
+			require_once($config["paths"]["resources"]["templates"]. "home.php");
+            break;
+    }
+    require_once($config["paths"]["resources"]["templates"]. "footer.php"); 
 ?>
 
 <style>

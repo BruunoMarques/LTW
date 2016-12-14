@@ -7,13 +7,20 @@
     if something changes such as your database credentials, or a path to a specific resource,
     you'll only need to update it here.
 */
- 
+defined('PUBLIC_PATH')
+    or define('PUBLIC_PATH',dirname(realpath(__FILE__)) . "/");
+
 $config = array(
     "urls" => array(
-        "baseUrl" => "http://example.com"
+        "public_path" => PUBLIC_PATH,
+	    "base_path" => dirname(PUBLIC_PATH)
     ),
     "paths" => array(
-        "resources" => "resources/",
+        "resources" => array (
+            "api" => "resources/api/",
+            "sql" => "resources/sql_files/",
+            "templates" => "resources/templates/"
+        ),
         "images" => array(
             "content" => "images/content/",
             "layout" => "images/layout/"
