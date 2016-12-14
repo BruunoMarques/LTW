@@ -1,10 +1,12 @@
 <?php
- try
-   {
-    $db = new PDO('sqlite:' . $config["root"] . '/' . $config["paths"]["resources"]["sql"] . 'db.db');
- }
- catch(PDOException $e)
- {
-  die("Failed to connect to the database: " . $e->getMessage());
- }
+    try
+    {
+        $dbpath = $config["root"] . '/' . $config["paths"]["resources"]["sql"] . 'db.db';
+        echo $dbpath;
+        $db = new PDO('sqlite:' . $dbpath);
+    }
+    catch(PDOException $e)
+    {
+        die("Failed to connect to the database: " . $e->getMessage());
+    }
 ?>
