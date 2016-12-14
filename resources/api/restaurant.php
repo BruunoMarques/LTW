@@ -1,15 +1,17 @@
 <?php
-include_once('../project/resources/api/connection.php');
+include_once('../api/connection.php');
 
 
 function getRestaurants(){
 		global $db;
+
 		$stmt = $db->prepare('SELECT * FROM Restaurant');
 		try {
       $stmt->execute();
     } catch (PDOException $e) {
       return $e->getMessage();
     }
+
 		$result = $stmt->fetchAll();
     return $result;
 	}

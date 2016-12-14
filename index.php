@@ -3,14 +3,7 @@
     require_once("resources/config.php");
      
     require_once(TEMPLATES_PATH . "/header.php");
-?>
-
-
-<?php
-    require_once(TEMPLATES_PATH . "/home.php");
-?>
-
-<?php
+    require_once(TEMPLATES_PATH . "/home.php"); 
     require_once(TEMPLATES_PATH . "/footer.php");
 ?>
 

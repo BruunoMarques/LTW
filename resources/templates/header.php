@@ -23,11 +23,11 @@
     <div class="logs">
     <ul>
       <li> <a href="#">Home</a></li>
-      <li> <a href="#">Restaurants</a></li>
+      <li> <a href="../project/resources/templates/restaurantpage.php">Restaurants</a></li>
       <li> <a href="#">Top 5 Restaurants</a></li>
       <li> <a href="#">About</a> </li>
       <li> <a href="#">Login</a></li>
-      <li> <a href="#">Register</a></li>
+      <li> <a href="../project/resources/templates/register.php">Register</a></li>
     </ul>
     </div>
 
