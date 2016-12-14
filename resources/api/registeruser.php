@@ -11,15 +11,30 @@ $confirm_password = $_POST["confirm_password"];
 $email = $_POST["email"];
 
 
-if (strlen($username < 20) && strlen($firstname < 20) && strlen($lastname < 20)){
+if (strlen($username) < 20 && strlen($firstname) < 20 && strlen($lastname) < 20){
 	
-	if($password == $confirm_password){
+	if($password == $confirm_password && strlen($password) == strlen($confirm_password)){
+		
 		$pass = hash('sha256', $_POST["password"]);
-		if (getUserInfo($email)){
+		
+		if (getUserByEmail($email)){
 			echo'Email already registered';
 		}
 		else{
-				newUser($username,$firstname,$lastname,$pass,$email);
+				if (newUser($username,$firstname,$lastname,$pass,$email) == 0){
+					session_start();
+					$currentUser = getUserByEmail($email);
+					
+					$currname = $currentUser['firstname'];
+					$currname .=" ";
+					$currname .= $currentUser['lastname'];
+					
+					$_SESSION['email'] = $email;
+					$_SESSION['name'] = $currname;
+					$_SESSION['id'] = $currentUser['idUser'];
+					
+				//	header()
+				}
 		}
 	}
 	else{

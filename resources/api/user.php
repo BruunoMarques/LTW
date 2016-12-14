@@ -39,11 +39,26 @@ function newUser($username,$firstname,$lastname,$password,$email){
     return $addUser->errorCode();
 }
 
-function getUserInfo($email){
+function getUserByEmail($email){
     global $db;
     $stmt = $db->prepare('SELECT * FROM User WHERE email = ?');
     $stmt->execute(array($email));
     return $stmt->fetch();
 }
+
+function getUserByUsername($username){
+    global $db;
+    $stmt = $db->prepare('SELECT * FROM User WHERE username = ?');
+    $stmt->execute(array($username));
+    return $stmt->fetch();
+}
+
+function getUserPassword($username){
+    global $db;
+    $stmt = $db->prepare('SELECT password FROM User WHERE username = ?');
+    $stmt->execute(array($username));
+    return $stmt->fetch();
+}
+
 
 ?>
