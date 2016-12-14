@@ -38,6 +38,7 @@
 					?>
 							<li> Welcome USER! </li>
 							<li> <a href="./?content=profile">Profile</a></li>
+							<li> <a href="">Logout</a></li>
 					<?php
     	    			} else {
 					?>

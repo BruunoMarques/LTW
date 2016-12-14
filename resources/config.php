@@ -11,6 +11,7 @@ defined('PUBLIC_PATH')
     or define('PUBLIC_PATH',dirname(realpath(__FILE__)) . "/");
 
 $config = array(
+    "index" => "../index.php",
     "urls" => array(
         "public_path" => PUBLIC_PATH,
 	    "base_path" => dirname(PUBLIC_PATH)
