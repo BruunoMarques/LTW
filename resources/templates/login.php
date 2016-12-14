@@ -1,17 +1,22 @@
+<div id="login-page">
 <form id= "loginform" action="../api/signin.php" method="post">
   <h1>Login</h1>
   <ul>
     <li>
-      <label for="username">
-        Username</label>
-      <input type="text" name="username" required>
+      <label for="username"></label>
+      <input type="text" name="username" placeholder='Username' required>
+     
     </li>
     <li>
       <label for="password">
-        Password
+       <input type="password" name="password" placeholder='Password' required>
+        
         <a href="./password_reset" class="label-link">Forgot password?</a></label>
-      <input type="password" name="password" required>
+        
+
     </li>
   </ul>
   <button type="submit" value="Login"> Login </button>
 </form>
+
+</div>

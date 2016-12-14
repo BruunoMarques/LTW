@@ -8,61 +8,74 @@ html {
 body {
   width: 100%;
   margin: 0px auto;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+ 
 }
 
 /*Header*/
+
 header {
-  height: 10%;
+    height: 10%;
 }
 
-.logs ul{
-  list-style: none;
-  background-color:white;
-	width: 100%;
-	margin: 0px;
-  padding: 0px;
+nav {
+    height: 10%;
 }
 
-.logs li{
-  font-family: 'Oswald', sans-serif;
-	height: 100%;
-	line-height: 100%;
-	font-size: 18px;
-	display: inline-block;
-	margin:10px;
-  padding-right: 30px;
-  padding-left: 10px;
-	text-align: left;
-  border-right: 1px solid black;
-  }
-
-.logs ul  li:nth-last-child(2){
-    border:none;
+#linksbar {
+    margin: 0;
 }
 
-.logs ul  li:nth-last-child(3){
-    border:none;
-}
-
-.logs ul > li:nth-last-of-type(-n+2) {
-    float:right;
-}
-
-.logs a {
-  text-decoration: none;
-  font-weight: bold;
-  color: black;
-}
-
-
-.logs a:hover{
+#linksbar a:hover {
     text-decoration: underline;
 }
 
-body .reg{
-  text-align: center;
+#linksbar ul {
+    list-style: none;
+    background-color: white;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
+
+#linksbar li {
+    font-family: 'Oswald', sans-serif;
+    height: 100%;
+    line-height: 100%;
+    font-size: 18px;
+    display: inline-block;
+    margin: 10px;
+    padding-right: 30px;
+    padding-left: 10px;
+    text-align: left;
+    border-right: 1px solid black;
+}
+
+#linksbar a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+#linksbar ul li:last-child {
+    border: none;
+}
+
+#general {
+    float: left;
+    width: 80%;
+    overflow: hidden;
+}
+
+#userbar {
+    float: right;
+    width: 20%;
+    overflow: hidden;
+}
+
+body .reg {
+    text-align: center;
+}
+
 
 /*Home*/
 
@@ -98,20 +111,20 @@ body .reg{
 }
 
 
-h1 {
+.home h1 {
   text-shadow: 0px 2px 4px black;
 	color: white;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 90px;
 }
-
-h2 {
+.home h2 {
   text-shadow: 0px 2px 4px black;
 	color: white;
   font-family: 'Tangerine', serif;
   font-size: 50px;
 }
 
+/*Footer*/
 footer{
   height: 0;
   font-size: 10px;
@@ -121,3 +134,201 @@ footer{
   padding: 0;
 }
 
+/*Login page*/
+#login-page {
+  
+ display: block;
+ padding-top: 5%;
+ padding-bottom: 5%;
+ background-image: url("https://i.ytimg.com/vi/Xv6LPr9MZg4/maxresdefault.jpg");
+ background-size: cover;
+ background-position: bottom;
+ background-attachment: fixed;
+}
+
+
+#login-page input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 15px;
+}
+
+
+#loginform  label {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+
+#loginform {
+  position: relative;
+ 
+ 
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 30px;
+
+  
+ 
+}
+
+#loginform button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  width: 100%;
+  border: 20px;
+  padding: 15px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+#loginform button:hover,.form button:active,.form button:focus {
+  background: gray;
+}
+
+#loginform li{
+ 
+  font-family: 'Oswald', sans-serif;
+
+  height: 100%;
+	font-size: 18px;
+	margin:10px;
+}
+
+#loginform ul{
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+#loginform h1 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-shadow: 0px 2px 4px black;
+	  color: white;
+    text-align: center;
+}
+
+#loginform a {
+  text-decoration: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+  color: white;
+}
+
+#loginform a::hover {
+  text-decoration:underline;
+}
+
+#loginform ul{
+list-style: none;
+}
+
+/*Register page*/
+
+#register-page {
+  
+ display: block;
+ padding-top: 5%;
+ padding-bottom: 5%;
+ background-image: url("https://i.ytimg.com/vi/Xv6LPr9MZg4/maxresdefault.jpg");
+ background-size: cover;
+ background-position: bottom;
+ background-attachment: fixed;
+}
+
+#register-page input {
+  font-family: "Roboto", sans-serif;
+  outline: 10px;
+  width: 100%;
+  border: 5px;
+  margin: 0 0 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 15px;
+}
+
+#registerform  label {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+
+#registerform {
+  position: relative;
+ 
+ 
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 30px;
+
+  
+ 
+}
+
+#registerform button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  width: 100%;
+  border: 20px;
+  padding: 15px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+#registerform button:hover,.form button:active,.form button:focus {
+  background: gray;
+}
+
+#registerform li{
+ 
+  font-family: 'Oswald', sans-serif;
+
+  height: 100%;
+	font-size: 18px;
+	margin:10px;
+}
+
+#registerform ul{
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+#registerform h1 {
+    font-size: 45px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-shadow: 0px 2px 4px black;
+	  color: white;
+    text-align: center;
+}
+
+#registerform a {
+  text-decoration: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+  color: white;
+}
+
+#registerform a::hover {
+  text-decoration:underline;
+}
+
+#registerform ul{
+list-style: none;
+}

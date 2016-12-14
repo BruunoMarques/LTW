@@ -1,35 +1,30 @@
-<form id= "form" action="../api/registeruser.php" method="post">
+<div id="register-page">
+<form id= "registerform" action="../api/registeruser.php" method="post">
   <h1>Register</h1>
   <ul>
     <li>
-      <label for="firstname">
-        Firstname</label>
-      <input type="text" name="firstname" required>
+      <label for="firstname"></label>
+      <input type="text" name="firstname" placeholder='Firstname' required>
     </li>
     <li>
-      <label for="lastname">
-        Lastname</label>
-      <input type="text" name="lastname" required>
+      <label for="lastname"></label>
+      <input type="text" name="lastname" placeholder='Lastname' required>
     </li>
     <li>
-      <label for="username">
-        Username</label>
-      <input type="text" name="username" required>
+      <label for="username"></label>
+      <input type="text" name="username" placeholder='Username' required>
     </li>
     <li>
-      <label for="password">
-        Password</label>
-      <input type="password" name="password" required>
+      <label for="password"></label>
+      <input type="password" name="password" placeholder='Password'required>
     </li>
     <li>
-      <label for="confirm_password">
-        Confirm password</label>
-      <input type="password" name="confirm_password" required>
+      <label for="confirm_password"></label>
+      <input type="password" name="confirm_password" placeholder='Confirm password' required>
     </li>
     <li>
-      <label for="email">
-        Email</label>
-      <input type="text" name="email" required>
+      <label for="email"></label>
+      <input type="text" name="email" placeholder='Email' required>
     </li>
   </ul>
   <!--<label for "reviewer">
@@ -40,3 +35,5 @@
 <input type="radio" name="type" value="owner">-->
   <input type="submit" value="Register">
 </form>
+
+</div>
