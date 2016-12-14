@@ -20,6 +20,30 @@
     	  <button type="button">Search</button>
     	</div>
     	-->
+<<<<<<< HEAD
+=======
+    	<div class="logs">
+    		<ul>
+    	  		<li> <a href="./">Home</a></li>
+    	  		<li> <a href="./?content=restaurants">Restaurants</a></li>
+    	  		<li> <a href="">Top 5 Restaurants</a></li>
+    	  		<li> <a href="">About</a> </li>
+    	  		<?php
+    	    		if (isset($_SESSION['id'])){
+				?>
+						<li> <a href="./?content=profile">Profile</a></li>
+				<?php
+    	    		} else {
+				?>
+						<li> <a href="./?content=login">Login</a></li>
+    	  				<li> <a href="./?content=register">Register</a></li>
+				<?php
+    	    		}
+    	 		?>
+    	  		
+    		</ul>
+    	</div>
+>>>>>>> origin/master
 	</header>
 	<nav>
 		<div id="linksbar">

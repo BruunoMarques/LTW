@@ -1,6 +1,6 @@
 <?php
 
-include_once("../api/user.php");
+include_once($config["paths"]["resources"]["api"]."user.php");
 
 
 $username = $_POST["username"];
@@ -15,7 +15,7 @@ if (strlen($username) < 20 && strlen($firstname) < 20 && strlen($lastname) < 20)
 	
 	if($password == $confirm_password && strlen($password) == strlen($confirm_password)){
 		
-		$pass = hash('sha256', $_POST["password"]);
+		$pass = password_hash($_POST["password"],PASSWORD_DEFAULT);
 		
 		if (getUserByEmail($email)){
 			echo'Email already registered';

@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 <div id="login-page">
 <form id= "loginform" action="../api/signin.php" method="post">
+=======
+<form id= "loginform" action="<?php echo $config["paths"]["resources"]["api"]?>signin.php" method="post">
+>>>>>>> origin/master
   <h1>Login</h1>
   <ul>
     <li>

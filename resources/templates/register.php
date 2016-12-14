@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 <div id="register-page">
 <form id= "registerform" action="../api/registeruser.php" method="post">
+=======
+<form id= "form" action="<?php echo $config["paths"]["resources"]["api"]?>registeruser.php" method="post">
+>>>>>>> origin/master
   <h1>Register</h1>
   <ul>
     <li>

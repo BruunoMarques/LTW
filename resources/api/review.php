@@ -1,5 +1,5 @@
 <?php
-include_once('../project/resources/api/connection.php');
+include_once($config["paths"]["resources"]["api"].'connection.php');
 
 
 
