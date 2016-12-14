@@ -11,6 +11,7 @@ function getReviews(){
     $reviews=$rdb->fetchAll();
     return $reviews;
 }
+
 function getReviewsById(){
     global $db;
     $rdb=$db->prepare('SELECT * FROM Review WHERE id_restaurant = :id');
@@ -19,6 +20,7 @@ function getReviewsById(){
     $reviews=$rdb->fetchAll();
     return $reviews;
 }
+
 function insertReview($id_restaurant,$id_user,$info,$rating){
     global $db;
     $insertReview=$db->prepare('INSERT INTO Review VALUES(NULL,?,?,?,?)');

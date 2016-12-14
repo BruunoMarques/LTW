@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS USER(
     username TEXT,
     firstname TEXT,
     lastname TEXT,
-    password TEXT,
+    password VARCHAR,
     email TEXT
 );
 

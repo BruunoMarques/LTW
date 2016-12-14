@@ -27,7 +27,7 @@ if (password_verify($password, $userpassword)){
 			$currname .=" ";
 			$currname .= $curruser['lastname'];
 			
-			var_dump($currname);
+			
 			$_SESSION['email'] = $curruser['email'];
 			$_SESSION['name'] = $currname;
 			$_SESSION['id'] = $curruser['idUser'];
