@@ -32,7 +32,7 @@ if (password_verify($password, $userpassword)){
 			$_SESSION['name'] = $currname;
 			$_SESSION['id'] = $curruser['idUser'];
 					
-	//mete aqui essa merda nao sei dos paths ja	 header('Location: ../pages/principal_page.php');
+			header("index.php");
 	}
 	
 	
