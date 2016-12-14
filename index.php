@@ -14,15 +14,9 @@
 		case "profile":
 			require_once($config["paths"]["resources"]["templates"]. "profile.php");
 			break;
-<<<<<<< HEAD
        case "restaurants":
             require_once($config["paths"]["resources"]["templates"]. "restaurantpage.php");
             break;
-=======
-		case "restaurants":
-			require_once($config["paths"]["resources"]["templates"]. "restaurantpage.php");
-			break;
->>>>>>> origin/master
         default:
 			require_once($config["paths"]["resources"]["templates"]. "home.php");
             break;
