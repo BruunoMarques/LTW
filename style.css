@@ -378,13 +378,12 @@ padding-left: 2em;
 
 /*Rest page*/
 .oncerestpage{
-   background-image: url("https://wallpaperscraft.com/image/board_black_line_texture_background_wood_55220_2560x1600.jpg");
+  background-image: url("https://wallpaperscraft.com/image/board_black_line_texture_background_wood_55220_2560x1600.jpg");
   background-size: cover;
   padding-top: 5%;
- padding-bottom: 15%;
-   text-shadow: 0px 2px 2px black;
-	  color:ghostwhite;
-    
+  padding-bottom: 15%;
+  text-shadow: 0px 2px 2px black;
+	color:ghostwhite;
   font-family: 'Oswald', sans-serif;
 }
 .oncerestpage h1{
@@ -445,4 +444,16 @@ padding-left: 2em;
   box-sizing: border-box;
   font-size: 14px;
   border-radius: 15px;
+}
+
+#reviews {
+ display:inline;
+}
+
+#reviews h3 {
+ padding-left: 5em;
+}
+
+#reviews form{
+  display:inline-block;
 }

@@ -1,22 +1,19 @@
 <?php
-include_once($config["paths"]["resources"]["api"].'connection.php');
-
-
 
 function getReviews(){
     global $db;
-    $rdb=$db->prepare('SELECT * FROM Review WHERE id_restaurant = :id');
+    $rdb=$db->prepare('SELECT * FROM Review WHERE idRestaurant = :id');
     $rdb->bindParam(':id', $_GET['id'], PDO::PARAM_INT);
     $rdb->execute();
     $reviews=$rdb->fetchAll();
     return $reviews;
 }
 
-function getReviewsById($id){
+ function getReviewsById($id){
     global $db;
-    $rdb=$db->prepare('SELECT * FROM Review WHERE id_restaurant = ?');
-    $reviews=$rdb->execute(array($id));
-    return $reviews;
+    $rdb=$db->prepare('SELECT * FROM Review WHERE idRestaurant = ?');
+ $rdb->execute(array($id));
+    return $rdb->fetchAll();
 }
 
 function insertReview($id_restaurant,$id_user,$info,$rating){

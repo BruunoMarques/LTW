@@ -3,8 +3,10 @@
 <?php
 
 include_once($config["paths"]["api"]."restaurant.php");
+include_once($config["paths"]["api"]."review.php");
 
 $id = $_GET['id'];
+
 $r =  getRestaurantById($id);
 
 $image_path =  $r['idRestaurant'] . ".jpg";
@@ -51,6 +53,24 @@ placeholder="Your opinion is important for us... Please leave a review">
 </div>
 <input type="submit" value="Submit">
 </form>
+
+</div>
+
+<div id="reviews">
+<h3> Reviews about this Restaurant: </h3>
+<?php
+$rv = getReviewsById($id);
+
+foreach($rv as $r){
+    
+
+echo '<h4>' . 'Rating: '.'</h4>';
+echo '<ul>' . $r['rating'] . '</ul>'; 
+echo '<h4>' . 'Description: '.'</h4>';
+echo '<ul>' . $r['info']  . '</ul>'; 
+
+}
+?>
 
 </div>
 
