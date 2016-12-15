@@ -1,15 +1,14 @@
 html {
-  background-color:white;
-  height: 100%;
-  width: 100%;
+    background-color: white;
+    height: 100%;
+    width: 100%;
 }
-
 
 body {
-  width: 100%;
-  margin: 0px auto;
- 
+    width: 100%;
+    margin: 0px auto;
 }
+
 
 /*Header*/
 
@@ -74,119 +73,111 @@ nav {
 
 /*Home*/
 
-.home{  
- text-align: center;
- display: block;
- padding-top: 8%;
- padding-bottom: 8%;
- background-image: url("http://www.aranyhaletterem.eu/wp-content/uploads/revslider/home1-slider/slide1_bg.jpg");
- background-size: cover;
- background-position: bottom;
- background-attachment: fixed;
+.home {
+    text-align: center;
+    display: block;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    background-image: url("http://www.aranyhaletterem.eu/wp-content/uploads/revslider/home1-slider/slide1_bg.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
 }
 
 .home #search {
-  border: none;
-  height: 25px;
-  padding: 25px;
-  width: 40%;
-  border-radius: 25px;
-  text-indent: 20px;
-  font-size: 25px;
-  cursor: pointer;
-  transition: background .3s ease-out, width .3s ease-out;
-  background: white url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAXVJREFUeNqkk80rhFEUxq+v8ZF8JGxlplnZKNnYzAZh42Nja4U/gNiYslJ2ypookr/BCAv2ZpryGUpYMIkVGc+t563j7d6TmTn1673ve5/3uffcc64xfyMCZkEK5MAPuAc7oM8UGN3gGuQVtkDtf8x6wYf48QDMg2mwyl3KuYhmVi12ZtMcBUlwDq5AlJo1YZrUDGeEcAycifcv0CO0+/z+CVp8himRyhLHj2AStIW0HSyU1Uz5DF8omANpjieUjLLUrLgmy0Ejx2+s4Dc4UQxzfNa7JiuZnk0lDgZAE3ft20CU42ffiptM4Y7V1GJEFCzhEyWEaF0xawe31F2CCm3lXWG6BzpDaQ4LM3vGg+LsnVEn2ifP1rDVPBVdEJjZvu1njy5qplVgOXQFJRcs2hB4F9835FUscxg38/C7QAN4AsdspRrw6rjLR2CccwXHgpJB3BQZ2x7Tm2INbcqHDsOMKSFa2Y+B2QOImRIjxrNLB2a/AgwAw3yFRFLxpoQAAAAASUVORK5CYII=) no-repeat 15px 15px;
+    border: none;
+    height: 25px;
+    padding: 25px;
+    width: 40%;
+    border-radius: 25px;
+    text-indent: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background .3s ease-out, width .3s ease-out;
+    background: white url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAXVJREFUeNqkk80rhFEUxq+v8ZF8JGxlplnZKNnYzAZh42Nja4U/gNiYslJ2ypookr/BCAv2ZpryGUpYMIkVGc+t563j7d6TmTn1673ve5/3uffcc64xfyMCZkEK5MAPuAc7oM8UGN3gGuQVtkDtf8x6wYf48QDMg2mwyl3KuYhmVi12ZtMcBUlwDq5AlJo1YZrUDGeEcAycifcv0CO0+/z+CVp8himRyhLHj2AStIW0HSyU1Uz5DF8omANpjieUjLLUrLgmy0Ejx2+s4Dc4UQxzfNa7JiuZnk0lDgZAE3ft20CU42ffiptM4Y7V1GJEFCzhEyWEaF0xawe31F2CCm3lXWG6BzpDaQ4LM3vGg+LsnVEn2ifP1rDVPBVdEJjZvu1njy5qplVgOXQFJRcs2hB4F9835FUscxg38/C7QAN4AsdspRrw6rjLR2CccwXHgpJB3BQZ2x7Tm2INbcqHDsOMKSFa2Y+B2QOImRIjxrNLB2a/AgwAw3yFRFLxpoQAAAAASUVORK5CYII=) no-repeat 15px 15px;
 }
 
 .home #search:focus {
-	background: white url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAXVJREFUeNqkk80rhFEUxq+v8ZF8JGxlplnZKNnYzAZh42Nja4U/gNiYslJ2ypookr/BCAv2ZpryGUpYMIkVGc+t563j7d6TmTn1673ve5/3uffcc64xfyMCZkEK5MAPuAc7oM8UGN3gGuQVtkDtf8x6wYf48QDMg2mwyl3KuYhmVi12ZtMcBUlwDq5AlJo1YZrUDGeEcAycifcv0CO0+/z+CVp8himRyhLHj2AStIW0HSyU1Uz5DF8omANpjieUjLLUrLgmy0Ejx2+s4Dc4UQxzfNa7JiuZnk0lDgZAE3ft20CU42ffiptM4Y7V1GJEFCzhEyWEaF0xawe31F2CCm3lXWG6BzpDaQ4LM3vGg+LsnVEn2ifP1rDVPBVdEJjZvu1njy5qplVgOXQFJRcs2hB4F9835FUscxg38/C7QAN4AsdspRrw6rjLR2CccwXHgpJB3BQZ2x7Tm2INbcqHDsOMKSFa2Y+B2QOImRIjxrNLB2a/AgwAw3yFRFLxpoQAAAAASUVORK5CYII=) no-repeat 15px 15px;
-	width: 60%;
-	outline: none;
-	cursor: text;
+    background: white url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAXVJREFUeNqkk80rhFEUxq+v8ZF8JGxlplnZKNnYzAZh42Nja4U/gNiYslJ2ypookr/BCAv2ZpryGUpYMIkVGc+t563j7d6TmTn1673ve5/3uffcc64xfyMCZkEK5MAPuAc7oM8UGN3gGuQVtkDtf8x6wYf48QDMg2mwyl3KuYhmVi12ZtMcBUlwDq5AlJo1YZrUDGeEcAycifcv0CO0+/z+CVp8himRyhLHj2AStIW0HSyU1Uz5DF8omANpjieUjLLUrLgmy0Ejx2+s4Dc4UQxzfNa7JiuZnk0lDgZAE3ft20CU42ffiptM4Y7V1GJEFCzhEyWEaF0xawe31F2CCm3lXWG6BzpDaQ4LM3vGg+LsnVEn2ifP1rDVPBVdEJjZvu1njy5qplVgOXQFJRcs2hB4F9835FUscxg38/C7QAN4AsdspRrw6rjLR2CccwXHgpJB3BQZ2x7Tm2INbcqHDsOMKSFa2Y+B2QOImRIjxrNLB2a/AgwAw3yFRFLxpoQAAAAASUVORK5CYII=) no-repeat 15px 15px;
+    width: 60%;
+    outline: none;
+    cursor: text;
 }
-
 
 .home h1 {
-  text-shadow: 0px 2px 4px black;
-	color: white;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 90px;
+    text-shadow: 0px 2px 4px black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 90px;
 }
+
 .home h2 {
-  text-shadow: 0px 2px 4px black;
-	color: white;
-  font-family: 'Tangerine', serif;
-  font-size: 50px;
+    text-shadow: 0px 2px 4px black;
+    color: white;
+    font-family: 'Tangerine', serif;
+    font-size: 50px;
 }
+
 
 /*Footer*/
-footer{
-  height: 0;
-  font-size: 10px;
-  float: right;
-  position: absolute;
-  margin: 0;
-  padding: 0;
+
+footer {
+    position: absolute;
+    height: 0;
+    font-size: 10px;
+    float: right;
+    margin: 0;
+    padding: 0;
 }
+
 
 /*Login page*/
-#login-page {
-  
- display: block;
- padding-top: 5%;
- padding-bottom: 5%;
- background-image: url("http://www.hdwallpaperspop.com/wp-content/uploads/2016/03/superb-seaside-restaurant-full-hd-wallpaper.jpeg");
- background-size: cover;
- background-position: bottom;
- background-attachment: fixed;
-}
 
+#login-page {
+    display: block;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-image: url("http://www.hdwallpaperspop.com/wp-content/uploads/2016/03/superb-seaside-restaurant-full-hd-wallpaper.jpeg");
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
 
 #login-page input {
-  font-family: "Roboto", sans-serif;
-  outline: 0;
-  width: 100%;
-  border: 0;
-  margin: 0 0 15px;
-  padding: 15px;
-  box-sizing: border-box;
-  font-size: 14px;
-  border-radius: 15px;
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 15px;
 }
 
-
-#loginform  label {
+#loginform label {
     margin-top: 5px;
     margin-bottom: 5px;
-    
 }
-
 
 #loginform {
-  position: relative;
- 
- 
-  max-width: 360px;
-  margin: 0 auto 100px;
-  padding: 30px;
-
-  
- 
+    position: relative;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 30px;
 }
 
-#loginform li{
- 
-  font-family: 'Oswald', sans-serif;
-
-  height: 100%;
-	font-size: 18px;
-	margin:10px;
+#loginform li {
+    font-family: 'Oswald', sans-serif;
+    height: 100%;
+    font-size: 18px;
+    margin: 10px;
 }
 
-#loginform ul{
-list-style: none;
-margin: 0;
-padding: 0;
+#loginform ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 #loginform h1 {
@@ -194,85 +185,75 @@ padding: 0;
     margin-top: 0;
     margin-bottom: 20px;
     text-shadow: 0px 2px 4px black;
-	  color: white;
+    color: white;
     text-align: center;
 }
 
 #loginform a {
-  text-decoration: none;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  font-size: 10px;
-  color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    color: white;
 }
 
 #loginform a::hover {
-  text-decoration:underline;
+    text-decoration: underline;
 }
 
-#loginform ul{
-list-style: none;
+#loginform ul {
+    list-style: none;
 }
+
 
 /*Register page*/
 
 #register-page {
-  
- display: block;
- padding-top: 5%;
- padding-bottom: 5%;
- background-image: url("http://www.hdwallpaperspop.com/wp-content/uploads/2016/03/superb-seaside-restaurant-full-hd-wallpaper.jpeg");
- background-size: cover;
- background-position: bottom;
- background-attachment: fixed;
+    display: block;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-image: url("http://www.hdwallpaperspop.com/wp-content/uploads/2016/03/superb-seaside-restaurant-full-hd-wallpaper.jpeg");
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
 }
 
 #register-page input {
-  font-family: "Roboto", sans-serif;
-  outline: 10px;
-  width: 100%;
-  border: 5px;
-  margin: 0 0 10px;
-  padding: 15px;
-  box-sizing: border-box;
-  font-size: 14px;
-  border-radius: 15px;
+    font-family: "Roboto", sans-serif;
+    outline: 10px;
+    width: 100%;
+    border: 5px;
+    margin: 0 0 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 15px;
 }
 
-#registerform  label {
+#registerform label {
     margin-top: 5px;
     margin-bottom: 5px;
-    
 }
-
 
 #registerform {
-  position: relative;
- 
- 
-  max-width: 360px;
-  margin: 0 auto 100px;
-  padding: 30px;
-
-  
- 
+    position: relative;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 30px;
 }
 
-
-#registerform li{
- 
-  font-family: 'Oswald', sans-serif;
-
-  height: 100%;
-	font-size: 18px;
-	margin:10px;
+#registerform li {
+    font-family: 'Oswald', sans-serif;
+    height: 100%;
+    font-size: 18px;
+    margin: 10px;
 }
 
-#registerform ul{
-list-style: none;
-margin: 0;
-padding: 0;
+#registerform ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 #registerform h1 {
@@ -280,51 +261,50 @@ padding: 0;
     margin-top: 0;
     margin-bottom: 10px;
     text-shadow: 0px 2px 4px black;
-	  color: white;
+    color: white;
     text-align: center;
 }
 
 #registerform a {
-  text-decoration: none;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  font-size: 10px;
-  color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    color: white;
 }
 
 #registerform a::hover {
-  text-decoration:underline;
+    text-decoration: underline;
 }
 
-#registerform ul{
-list-style: none;
+#registerform ul {
+    list-style: none;
 }
+
 
 /*Lists Restaurants */
 
-.restpage{
-   background-image: url("https://wallpaperscraft.com/image/board_black_line_texture_background_wood_55220_2560x1600.jpg");
-  background-size: cover;
-  padding-top: 5%;
- padding-bottom: 15%;
-   text-shadow: 0px 2px 2px black;
-	  color:ghostwhite;
-    
-  font-family: 'Oswald', sans-serif;
+.restpage {
+    background-image: url("https://wallpaperscraft.com/image/board_black_line_texture_background_wood_55220_2560x1600.jpg");
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 15%;
+    text-shadow: 0px 2px 2px black;
+    color: ghostwhite;
+    font-family: 'Oswald', sans-serif;
 }
-.restpage h1{
-  font-size: 50px;
+
+.restpage h1 {
+    font-size: 50px;
     margin-top: 0;
     margin-bottom: 0px;
     padding-left: 5px;
     text-align: center;
 }
 
-.restpage ul{
-   
-   
-   font-family: 'Oswald', sans-serif;
+.restpage ul {
+    font-family: 'Oswald', sans-serif;
     height: 100%;
     line-height: 100%;
     font-size: 18px;
@@ -334,70 +314,68 @@ list-style: none;
     text-align: left;
 }
 
-#details{
-  font-family: "Roboto", sans-serif;
-  outline: 10px;
-  width: 100%;
-  border: 5px;
-  margin: 0 0 10px;
-  padding: 15px;
-  box-sizing: border-box;
-  font-size: 14px;
-  border-radius: 15px;
+#details {
+    font-family: "Roboto", sans-serif;
+    outline: 10px;
+    width: 100%;
+    border: 5px;
+    margin: 0 0 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 15px;
 }
 
-#infores{
-
-padding-bottom: 5em;
-padding-top: 5em;
-padding-left: 2em;
+#infores {
+    padding-bottom: 5em;
+    padding-top: 5em;
+    padding-left: 2em;
 }
 
-#total{
-
-  display: inline-flex;
-  margin-top: 2em;
-  margin-left: 3em;
+#total {
+    display: inline-flex;
+    margin-top: 2em;
+    margin-left: 3em;
 }
 
-#informations{
-  display: block;
-  margin-top: 10em;
+#informations {
+    display: block;
+    margin-top: 10em;
 }
 
-#infores img{
-  border: 1px solid black;
-  border-radius: 50%;
+#infores img {
+    border: 1px solid black;
+    border-radius: 50%;
 }
 
-#infores img:hover{
-  width: 300;
-  height: 300;
+#infores img:hover {
+    width: 300;
+    height: 300;
 }
 
 
 /*Rest page*/
-.oncerestpage{
-  background-image: url("https://wallpaperscraft.com/image/board_black_line_texture_background_wood_55220_2560x1600.jpg");
-  background-size: cover;
-  padding-top: 5%;
-  padding-bottom: 15%;
-  text-shadow: 0px 2px 2px black;
-	color:ghostwhite;
-  font-family: 'Oswald', sans-serif;
+
+.oncerestpage {
+    background-image: url("https://wallpaperscraft.com/image/board_black_line_texture_background_wood_55220_2560x1600.jpg");
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 15%;
+    text-shadow: 0px 2px 2px black;
+    color: ghostwhite;
+    font-family: 'Oswald', sans-serif;
 }
-.oncerestpage h1{
-  font-size: 50px;
+
+.oncerestpage h1 {
+    font-size: 50px;
     margin-top: 0;
     margin-bottom: 0px;
     padding-left: 5px;
     text-align: center;
 }
 
-.oncerestpage ul{
-   
-   
-   font-family: 'Oswald', sans-serif;
+.oncerestpage ul {
+    font-family: 'Oswald', sans-serif;
     height: 100%;
     line-height: 100%;
     font-size: 15px;
@@ -406,10 +384,9 @@ padding-left: 2em;
     padding-left: 50px;
     text-align: left;
 }
-.oncerestpage h4{
-   
-   
-   font-family: 'Oswald', sans-serif;
+
+.oncerestpage h4 {
+    font-family: 'Oswald', sans-serif;
     height: 100%;
     line-height: 100%;
     font-size: 18px;
@@ -420,46 +397,47 @@ padding-left: 2em;
     text-align: left;
 }
 
-#r_image{
-  text-align: center;
-  padding: 2em;
-}
-#r_image img{
-  border: 1px solid black;
-  border-radius: 50%;
+#r_image {
+    text-align: center;
+    padding: 2em;
 }
 
-#review{
-  padding-left: 25em;
-  padding-top: 2em;
+#r_image img {
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+#review {
+    padding-left: 25em;
+    padding-top: 2em;
 }
 
 #review input {
-  font-family: "Roboto", sans-serif;
-  outline: 10px;
-  width: 10%;
-  border: 5px;
-  margin: 0 0 5px;
-  padding: 5px;
-  box-sizing: border-box;
-  font-size: 14px;
-  border-radius: 15px;
+    font-family: "Roboto", sans-serif;
+    outline: 10px;
+    width: 10%;
+    border: 5px;
+    margin: 0 0 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 15px;
 }
 
 #reviews {
- display:inline;
+    display: inline;
 }
 
 #reviews h3 {
- padding-left: 1em;
- font-size: 20px;
+    padding-left: 1em;
+    font-size: 20px;
 }
 
 #reviews h2 {
- padding-left: 3em;
- font-size: 25px;
+    padding-left: 3em;
+    font-size: 25px;
 }
 
-#reviews form{
-  display:inline-block;
+#reviews form {
+    display: inline-block;
 }
