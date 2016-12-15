@@ -32,6 +32,42 @@ INSERT INTO RESTAURANT(idRestaurant,idOwner,name,inf,phonenumber,averagecost,sch
            'Casual'
            );
 
+		   INSERT INTO RESTAURANT(idRestaurant,idOwner,name,inf,phonenumber,averagecost,schedule,adress,categories)
+       VALUES(
+           3,
+           3,
+           'A gulosa',
+           'Venha experimentar a melhor comida do Dubai pelo chef Pingu Carneiro',
+           '213458900',
+           '100€ per person',
+           'Only friday and weekend evening',
+           'Pinhais da Foz, nº304, Porto',
+           'Casual'
+           );
+INSERT INTO RESTAURANT(idRestaurant,idOwner,name,inf,phonenumber,averagecost,schedule,adress,categories)
+       VALUES(
+           4,
+           3,
+           'A gulosa',
+           'Venha experimentar a melhor comida do Dubai pelo chef Pingu Carneiro',
+           '213458900',
+           '100€ per person',
+           'Only friday and weekend evening',
+           'Pinhais da Foz, nº304, Porto',
+           'Casual'
+           );
+INSERT INTO RESTAURANT(idRestaurant,idOwner,name,inf,phonenumber,averagecost,schedule,adress,categories)
+       VALUES(
+           5,
+           3,
+           'A gulosa',
+           'Venha experimentar a melhor comida do Dubai pelo chef Pingu Carneiro',
+           '213458900',
+           '100€ per person',
+           'Only friday and weekend evening',
+           'Pinhais da Foz, nº304, Porto',
+           'Casual'
+           );
 
 INSERT INTO REVIEW(idReview,idRestaurant,idReviewer,info,rating)
        VALUES(1,1,2,'Muito bom!!',5);
