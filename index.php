@@ -18,7 +18,7 @@
 				require_once($config["paths"]["templates"]. "profile.php");
 				break;
        		case "restaurants":
-        	    require_once($config["paths"]["templates"]. "restaurantpage.php");
+        	    require_once($config["paths"]["templates"]. "restaurants_page.php");
         	    break;
         	default:
 				require_once($config["paths"]["templates"]. "home.php");
