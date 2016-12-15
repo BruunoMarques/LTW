@@ -23,6 +23,9 @@
 			case "restaurant":
         	    require_once($config["paths"]["templates"]. "restaurant_page.php");
         	    break;
+			case "about":
+				require_once($config["paths"]["templates"]. "about.php");
+				break;
         	default:
 				require_once($config["paths"]["templates"]. "home.php");
         	    break;
