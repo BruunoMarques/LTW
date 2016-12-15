@@ -60,5 +60,29 @@ function getUserPassword($username){
     return $stmt->fetch();
 }
 
+function UserChangePass($username, $nPassword){
+	global $db;
+	
+	$stmt = $db->prepare('UPDATE User SET password = ? WHERE username = ?');
+	return $stmt->execute(array($nPassword,$username));
+}
+
+function UserChangeName($username, $nfirstName,$nlastName){
+	global $db;
+	
+	$stmt = $db->prepare('UPDATE User SET firstname = ? WHERE username = ?');
+	return $stmt->execute(array($nfirstName,$username));
+	
+	$stmt1 = $db->prepare('UPDATE User SET lastname = ? WHERE username = ?');
+	return $stmt1->execute(array($nlastName,$username));
+}
+
+function UserChangeEmail($username, $nEmail){
+	global $db;
+	
+	$stmt = $db->prepare('UPDATE User SET email = ? WHERE username = ?');
+	return $stmt->execute(array($nEmail,$username));
+}
+
 
 ?>
