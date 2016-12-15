@@ -30,7 +30,7 @@
     			<ul>
     	  			<li> <a href="./">Home</a></li>
     	  			<li> <a href="./?content=restaurants">Restaurants</a></li>
-    	  			<li> <a href="">Top 5 Restaurants</a></li>
+    	  			<!--<li> <a href="">Top 5 Restaurants</a></li>-->
     	  			<li> <a href="./?content=about">About</a> </li>
     			</ul>
     		</div>
