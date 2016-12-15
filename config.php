@@ -28,6 +28,17 @@ $config = array(
         "css" => "css/"
     )
 );
+
+try
+{
+    $dbpath = $config["paths"]["sql"] . 'db.db';
+    //echo $dbpath;
+    $db = new PDO('sqlite:' . $dbpath);
+}
+catch(PDOException $e)
+{
+    die("Failed to connect to the database: " . $e->getMessage());
+}
  
 /*
     I will usually place the following in a bootstrap file or some type of environment
