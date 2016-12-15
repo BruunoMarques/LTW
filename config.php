@@ -25,6 +25,7 @@ $config = array(
             "content" => "images/content/",
             "layout" => "images/layout/"
         ),
+        "scripts" =>  "./scripts/", 
         "css" => "css/"
     )
 );

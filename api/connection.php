@@ -1,7 +1,7 @@
 <?php
     try
     {
-        $dbpath = '../' . $config["paths"]["sql"] . 'db.db';
+        $dbpath = '../sql_files/db.db';
         //echo $dbpath;
         $db = new PDO('sqlite:' . $dbpath);
     }

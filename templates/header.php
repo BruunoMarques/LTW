@@ -3,7 +3,9 @@
 
 <head>
   	<meta charset="UTF-8">
-  	<title>Home page</title>
+	<title>Ratatouille</title>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="<?php echo $config["paths"]["scripts"]?>login.js"></script>
 </head>
 
 <body>
