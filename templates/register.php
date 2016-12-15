@@ -4,32 +4,32 @@
 		<ul>
 			<li>
 				<label for="firstname"></label>
-		    	<input type="text" name="firstname" placeholder='Firstname' required>
+		    	<input type="text" id="firstname" name="firstname" placeholder='Firstname' required>
 				<div class="err" id="firstname_err"></div>
 		  	</li>
 		  	<li>
 		    	<label for="lastname"></label>
-		    	<input type="text" name="lastname" placeholder='Lastname' required>
+		    	<input type="text" id="lastname" name="lastname" placeholder='Lastname' required>
 				<div class="err" id="lastname_err"></div>
 		  	</li>
 		  	<li>
 		   		<label for="username"></label>
-		    	<input type="text" name="username" placeholder='Username' required>
+		    	<input type="text" id="username" name="username" placeholder='Username' required>
 				<div class="err" id="username_err"></div>
 		 	</li>
 		  	<li>
 		    	<label for="password"></label>
-		    	<input type="password" name="password" placeholder='Password'required>
+		    	<input type="password" id="password" name="password" placeholder='Password'required>
 				<div class="err" id="pwd_err"></div>
 		  	</li>
 		  	<li>
 		    	<label for="confirm_password"></label>
-		    	<input type="password" name="confirm_password" placeholder='Confirm password' required>
+		    	<input type="password" id="confirm_password" name="confirm_password" placeholder='Confirm password' required>
 				<div class="err" id="confpwd_err"></div>
 		  	</li>
 		  	<li>
 		    	<label for="email"></label>
-		    	<input type="text" name="email" placeholder='Email' required>
+		    	<input type="text" id="email" name="email" placeholder='Email' required>
 				<div class="err" id="email_err"></div>
 		  	</li>
 		</ul>
