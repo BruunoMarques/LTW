@@ -12,6 +12,5 @@
 				<a href="./password_reset" class="label-link">Forgot password?</a></label>
 			</li>
 		</ul>
-		<button type="submit" value="Login"> Login </button>
-	</form>
+	<input type="submit" value="Login">	</form>
 </div>
