@@ -4,10 +4,10 @@
 
 include_once($config["paths"]["api"]."restaurant.php");
 
-$id = 3;
+$id = $_GET['id'];
 $r =  getRestaurantById($id);
 
-     $image_path =  $r['idRestaurant'] . ".jpg";
+$image_path =  $r['idRestaurant'] . ".jpg";
 ?>
 
 
@@ -22,20 +22,31 @@ echo '<h1>' . $r['name'] . '</h1>';
 </div>
 
 <?php
-echo '<ul>' . 'Informations: ' . $r['inf'].'</ul>';
-echo '<ul>' . 'Contacts:  '. $r['phonenumber'] . '</ul>';
-echo '<ul>' . 'Average Cost: '. $r['averagecost'] . '</ul>';
-echo '<ul>' . 'Schedule: '. $r['schedule'] . '</ul>';
-echo '<ul>' . 'Adress: '. $r['adress'] . '</ul>';
-echo '<ul>' . 'Categories: '. $r['categories'] . '</ul>';
+echo '<h4>' . 'Informations: '. '</h4>';
+echo '<ul>' . $r['inf']. '</ul>';
+
+echo '<h4>' . 'Contacts:  '. '</h4>';
+echo '<ul>'. $r['phonenumber'] . '</ul>';
+
+echo '<h4>' . 'Average Cost: '. '</h4>';
+echo '<ul>'. $r['averagecost'] . '</ul>';
+
+echo '<h4>' . 'Schedule: '.'</h4>';
+echo '<ul>'. $r['schedule'] . '</ul>';
+
+echo '<h4>' . 'Adress: '.'</h4>';
+echo '<ul>'. $r['adress'] . '</ul>';
+
+echo '<h4>' . 'Categories: '. '</h4>';
+echo '<ul>'. $r['categories'] . '</ul>';
 ?>
 </div>
 
 <div id="review">
 <form action="/html/tags/html_form_tag_action.cfm" method="post">
 <div>
-<textarea  cols='50' rows='5'name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">
-Your opinion is important for us... Please make a review 
+<textarea  cols='60' rows='3'name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;"
+placeholder="Your opinion is important for us... Please leave a review">
 </textarea>
 </div>
 <input type="submit" value="Submit">

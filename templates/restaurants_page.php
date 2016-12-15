@@ -8,13 +8,16 @@ $rest = getRestaurants();
 
 foreach($rest as $r){
      $image_path =  $r['idRestaurant'] . ".jpg";
+     $id =$r['idRestaurant'];
 ?>
 
 <div id="total">
 <div id="infores">
 
 
+<a href="./?content=restaurant&id=<?=$id?>">
 <img src="Imagens/RestImages/<?=$image_path?>" alt="restaurant_pics" width="250" height="250">
+</a>
 
 </div>
 <div id="informations">
