@@ -18,9 +18,9 @@ $config = array(
 	    "base_path" => dirname(PUBLIC_PATH)
     ),
     "paths" => array(
-        "api" => PUBLIC_PATH . "api/",
-        "sql" => PUBLIC_PATH . "sql_files/",
-        "templates" => PUBLIC_PATH . "templates/",
+        "api" => "./api/",
+        "sql" => "./sql_files/",
+        "templates" => "./templates/",
         "images" => array(
             "content" => "images/content/",
             "layout" => "images/layout/"

@@ -1,5 +1,6 @@
 <?php
-include_once($config["paths"]["api"]."user.php");
+require_once("../config.php");
+include_once("user.php");
 
 $username= trim($_POST["username"]);
 $password = $_POST['password'];
@@ -29,7 +30,7 @@ if (password_verify($password, $userpassword)){
 			$_SESSION['name'] = $currname;
 			$_SESSION['id'] = $curruser['idUser'];
 					
-			header("Location:index");
+			header("Location: ../");
 	}
 	
 	
