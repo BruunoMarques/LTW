@@ -4,6 +4,7 @@
 
 include_once($config["paths"]["api"]."restaurant.php");
 include_once($config["paths"]["api"]."review.php");
+include_once($config["paths"]["api"]."user.php");
 
 $id = $_GET['id'];
 
@@ -57,13 +58,18 @@ placeholder="Your opinion is important for us... Please leave a review">
 </div>
 
 <div id="reviews">
-<h3> Reviews about this Restaurant: </h3>
+<h2> Reviews about this Restaurant: </h2>
 <?php
 $rv = getReviewsById($id);
 
 foreach($rv as $r){
     
+   $user = getUserById($id);
+     $name = $user['firstname'];
+     $name .=" ";
+     $name .= $user['lastname'];
 
+echo'<h3>' . $name .'</h3>';
 echo '<h4>' . 'Rating: '.'</h4>';
 echo '<ul>' . $r['rating'] . '</ul>'; 
 echo '<h4>' . 'Description: '.'</h4>';

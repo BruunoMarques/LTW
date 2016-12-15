@@ -451,7 +451,13 @@ padding-left: 2em;
 }
 
 #reviews h3 {
- padding-left: 5em;
+ padding-left: 1em;
+ font-size: 20px;
+}
+
+#reviews h2 {
+ padding-left: 3em;
+ font-size: 25px;
 }
 
 #reviews form{

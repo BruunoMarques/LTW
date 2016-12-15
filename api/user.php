@@ -1,6 +1,5 @@
 <?php
-
-include_once('connection.php');
+//include_once('connection.php');
 
 
 function getUsers(){
@@ -16,19 +15,12 @@ function getUsers(){
 }
 
 
-function getUserById(){
+function getUserById($id){
     global $db;
-    $stmt = $db->prepare('SELECT * FROM User WHERE idUser = :idUser');
-    
-    
-    $stmt->bindValue(':idUser',$_POST['idUser'],PDO::PARAM_INT);
-    try {
-        $stmt->execute();
-    } catch (PDOException $e) {
-        return $e->getMessage();
-    }
-    $result = $stmt->fetchAll();
-    return $result;
+    $stmt = $db->prepare('SELECT * FROM User WHERE idUser = ?');
+    $stmt->execute(array($id));
+ return $stmt->fetch();
+
 }
 
 
