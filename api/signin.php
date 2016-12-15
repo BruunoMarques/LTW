@@ -1,6 +1,5 @@
 <?php
 include_once($config["paths"]["resources"]["api"]."user.php");
-include_once($config["paths"]["resources"]["api"]."connection.php");
 
 $username= trim($_POST["username"]);
 $password = $_POST['password'];

@@ -1,5 +1,5 @@
 <?php
- 
+
 /*
     The important thing to realize is that the config file should be included in every
     page of your project, or at least any page you want access to these settings.
@@ -8,20 +8,20 @@
     you'll only need to update it here.
 */
 defined('PUBLIC_PATH')
-    or define('PUBLIC_PATH',dirname(realpath(__FILE__)) . "/");
+    or define('PUBLIC_PATH',dirname(__FILE__) . "/");
 
 $config = array(
-    "root" => realpath($_SERVER["DOCUMENT_ROOT"]),
-    "index" => "../index.php",
+    "root" => PUBLIC_PATH . "/../",
+    "index" => PUBLIC_PATH . "../index.php",
     "urls" => array(
         "public_path" => PUBLIC_PATH,
 	    "base_path" => dirname(PUBLIC_PATH)
     ),
     "paths" => array(
         "resources" => array (
-            "api" => realpath("resources/api/") . '/',
-            "sql" => realpath("resources/sql_files/") . '/',
-            "templates" => realpath("resources/templates/") . '/'
+            "api" => PUBLIC_PATH . "api/",
+            "sql" => PUBLIC_PATH . "sql_files/",
+            "templates" => PUBLIC_PATH . "templates/"
         ),
         "images" => array(
             "content" => "images/content/",

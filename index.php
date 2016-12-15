@@ -2,8 +2,8 @@
     // load up your config file
     require_once("resources/config.php");
 
-	require_once($config["paths"]["resources"]["templates"]. "header.php"); 
-    
+	require_once($config["paths"]["resources"]["templates"]. "header.php");
+
 	if (!isset($_GET["content"])){
 		require_once($config["paths"]["resources"]["templates"]. "home.php");
 	} else {
