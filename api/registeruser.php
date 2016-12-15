@@ -15,37 +15,38 @@ if (strlen($username) < 20 && strlen($firstname) < 20 && strlen($lastname) < 20)
 	
 	if($password == $confirm_password && strlen($password) == strlen($confirm_password)){
 		
-		$pass = password_hash($_POST["password"],PASSWORD_DEFAULT);
+		$pass = password_hash($password,PASSWORD_DEFAULT);
 		
-		if (getUserByEmail($email)){
-			echo'Email already registered';
-		}
-		else{
+		if (getUserByUsername($username)){
+			echo 'usr exists';
+		} else{
+			if (getUserByEmail($email)){
+				echo 'email exists';
+			}
+			else{
 				if (newUser($username,$firstname,$lastname,$pass,$email) == 0){
 					session_start();
 					$currentUser = getUserByEmail($email);
-					
+
 					$currname = $currentUser['firstname'];
 					$currname .=" ";
 					$currname .= $currentUser['lastname'];
-					
+
 					$_SESSION['email'] = $email;
 					$_SESSION['name'] = $currname;
 					$_SESSION['id'] = $currentUser['idUser'];
-					
-				//	header()
+
+					echo 'success';
 				}
+			}
 		}
 	}
 	else{
-		echo 'Passwords do not match';
+		echo 'pwd match';
 	}
-	
-}
-
-else{
-	echo 'Invalid account parameters, please refill fields';
+} else{
+	echo 'params inv';
 	return;
 }
-	var_dump(getUsers());
+
 ?>
