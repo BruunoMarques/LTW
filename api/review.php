@@ -12,12 +12,10 @@ function getReviews(){
     return $reviews;
 }
 
-function getReviewsById(){
+function getReviewsById($id){
     global $db;
-    $rdb=$db->prepare('SELECT * FROM Review WHERE id_restaurant = :id');
-    $rdb->bindParam(':id', $_POST['id'], PDO::PARAM_INT);
-    $rdb->execute();
-    $reviews=$rdb->fetchAll();
+    $rdb=$db->prepare('SELECT * FROM Review WHERE id_restaurant = ?');
+    $reviews=$rdb->execute(array($id));
     return $reviews;
 }
 
