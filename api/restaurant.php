@@ -1,5 +1,4 @@
 <?php
-include_once($config["paths"]["api"]."connection.php");
 
 function getRestaurants(){
 		global $db;
