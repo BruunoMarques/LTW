@@ -401,8 +401,21 @@ padding-left: 2em;
    font-family: 'Oswald', sans-serif;
     height: 100%;
     line-height: 100%;
+    font-size: 15px;
+    margin: 10px;
+    padding-right: 30px;
+    padding-left: 50px;
+    text-align: left;
+}
+.oncerestpage h4{
+   
+   
+   font-family: 'Oswald', sans-serif;
+    height: 100%;
+    line-height: 100%;
     font-size: 18px;
     margin: 10px;
+    padding-top: 30px;
     padding-right: 30px;
     padding-left: 50px;
     text-align: left;
@@ -410,7 +423,7 @@ padding-left: 2em;
 
 #r_image{
   text-align: center;
-  padding: 5em;
+  padding: 2em;
 }
 #r_image img{
   border: 1px solid black;
@@ -418,8 +431,8 @@ padding-left: 2em;
 }
 
 #review{
-  padding-left: 8em;
-  padding: 2em;
+  padding-left: 25em;
+  padding-top: 2em;
 }
 
 #review input {
