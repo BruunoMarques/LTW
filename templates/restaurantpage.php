@@ -2,7 +2,7 @@
 
 <?php
 
-include_once($config["paths"]["resources"]["api"]."restaurant.php");
+include_once($config["paths"]["api"]."restaurant.php");
 
 $rest = getRestaurants();
 

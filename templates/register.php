@@ -1,5 +1,5 @@
 <div id="register-page">
-	<form id= "registerform" action="<?php echo $config["paths"]["resources"]["api"]?>registeruser.php" method="post">
+	<form id= "registerform" action="<?php echo $config["paths"]["api"]?>registeruser.php" method="post">
 		<h1>Register</h1>
 		<ul>
 		  <li>

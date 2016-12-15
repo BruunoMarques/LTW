@@ -11,18 +11,16 @@ defined('PUBLIC_PATH')
     or define('PUBLIC_PATH',dirname(__FILE__) . "/");
 
 $config = array(
-    "root" => PUBLIC_PATH . "/../",
-    "index" => PUBLIC_PATH . "../index.php",
+    "root" => PUBLIC_PATH,
+    "index" => PUBLIC_PATH . "index.php",
     "urls" => array(
         "public_path" => PUBLIC_PATH,
 	    "base_path" => dirname(PUBLIC_PATH)
     ),
     "paths" => array(
-        "resources" => array (
-            "api" => PUBLIC_PATH . "api/",
-            "sql" => PUBLIC_PATH . "sql_files/",
-            "templates" => PUBLIC_PATH . "templates/"
-        ),
+        "api" => PUBLIC_PATH . "api/",
+        "sql" => PUBLIC_PATH . "sql_files/",
+        "templates" => PUBLIC_PATH . "templates/",
         "images" => array(
             "content" => "images/content/",
             "layout" => "images/layout/"
