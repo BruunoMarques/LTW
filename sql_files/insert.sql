@@ -36,41 +36,77 @@ INSERT INTO RESTAURANT(idRestaurant,idOwner,name,inf,phonenumber,averagecost,sch
        VALUES(
            3,
            3,
-           'A gulosa',
-           'Venha experimentar a melhor comida do Dubai pelo chef Pingu Carneiro',
-           '213458900',
-           '100€ per person',
-           'Only friday and weekend evening',
-           'Pinhais da Foz, nº304, Porto',
+           'O Mineiro',
+           'Segundo a cliente Miriam , o melhor restaurante do Porto!',
+           '225654789',
+           '7€ per person',
+           'Everyday',
+           'Rua Central, nº304, Valongo',
            'Casual'
            );
 INSERT INTO RESTAURANT(idRestaurant,idOwner,name,inf,phonenumber,averagecost,schedule,adress,categories)
        VALUES(
            4,
            3,
-           'A gulosa',
-           'Venha experimentar a melhor comida do Dubai pelo chef Pingu Carneiro',
-           '213458900',
-           '100€ per person',
-           'Only friday and weekend evening',
-           'Pinhais da Foz, nº304, Porto',
-           'Casual'
+           'Pra la Caminha',
+           'O melhor spot do mundo em Moledo do Minho!',
+           '258753159',
+           '10€ per person',
+           'Everyday 9.30a.m to 2a.m',
+           'Paredao de Moledo, nº24, Caminha',
+           'Cafe de Praia'
            );
 INSERT INTO RESTAURANT(idRestaurant,idOwner,name,inf,phonenumber,averagecost,schedule,adress,categories)
        VALUES(
            5,
            3,
-           'A gulosa',
-           'Venha experimentar a melhor comida do Dubai pelo chef Pingu Carneiro',
-           '213458900',
-           '100€ per person',
-           'Only friday and weekend evening',
-           'Pinhais da Foz, nº304, Porto',
+           'Hamilton',
+           'A melhor pizzaria de Portugal. Venha conhecer Italia. As melhores pizzas e o melhor licor limoncelo!',
+           '200879632',
+           '16€ per person',
+           'Wensday-Sunday, 11.am to 22p.m',
+           'Praça do Comercio, nº986,Lisboa',
            'Casual'
            );
 
-INSERT INTO REVIEW(idReview,idRestaurant,idReviewer,info,rating)
-       VALUES(1,1,2,'Muito bom!!',5);
-INSERT INTO REVIEW(idReview,idRestaurant,idReviewer,info,rating)
-       VALUES(2,2,1,'Pessimo',1);
+INSERT INTO RESTAURANT(idRestaurant,idOwner,name,inf,phonenumber,averagecost,schedule,adress,categories)
+       VALUES(
+           6,
+           3,
+           'daTerra',
+           'Encontre o melhor Restaurante Vegetariano do pais',
+           '214569852',
+           '15€ per person',
+           'Everyday, just lunch',
+           'Rua das Flores, nº6,Porto',
+           'Vegetariano'
+           );
 
+INSERT INTO RESTAURANT(idRestaurant,idOwner,name,inf,phonenumber,averagecost,schedule,adress,categories)
+       VALUES(
+           7,
+           3,
+           'Yoku',
+           'As melhores francesinhas da invicta!',
+           '221368456',
+           '15€ per person',
+           'Everyday, lunch and dinner',
+           'Praça da Areosa, nº46, Porto',
+           'Comida Tradicional'
+           );
+
+
+INSERT INTO REVIEW(idReview,idRestaurant,idReviewer,info,rating)
+       VALUES(1,4,1,'Muito bom!!',5);
+INSERT INTO REVIEW(idReview,idRestaurant,idReviewer,info,rating)
+       VALUES(2,4,2,'Optimo!!',5);
+INSERT INTO REVIEW(idReview,idRestaurant,idReviewer,info,rating)
+       VALUES(3,1,1,'Pessimo',1);
+INSERT INTO REVIEW(idReview,idRestaurant,idReviewer,info,rating)
+       VALUES(4,2,2,'Gostei do espaço e do serviço, no entanto o menu podia ter sido melhor..',3);
+INSERT INTO REVIEW(idReview,idRestaurant,idReviewer,info,rating)
+       VALUES(5,3,1,'Normal, muitos aspectos a melhorar...',3);
+INSERT INTO REVIEW(idReview,idRestaurant,idReviewer,info,rating)
+       VALUES(6,5,2,'A melhor pizzaria do pais, adorei! Ideal para familias ou casais! Espaço muito agradavel e acolhedor',5);
+INSERT INTO REVIEW(idReview,idRestaurant,idReviewer,info,rating)
+       VALUES(7,6,2,'Para quem aprecia comida vegetariana aconselho ! Muito bom',5);
