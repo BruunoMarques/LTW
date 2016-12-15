@@ -301,17 +301,102 @@ padding: 0;
 list-style: none;
 }
 
+/*Lists Restaurants */
+
+.restpage{
+   background-image: url("https://wallpaperscraft.com/image/board_black_line_texture_background_wood_55220_2560x1600.jpg");
+  background-size: cover;
+  padding-top: 5%;
+ padding-bottom: 15%;
+   text-shadow: 0px 2px 2px black;
+	  color:ghostwhite;
+    
+  font-family: 'Oswald', sans-serif;
+}
 .restpage h1{
-   font-size: 30px;
+  font-size: 50px;
     margin-top: 0;
     margin-bottom: 0px;
-    padding-left: 45px;
-     text-shadow: 0px 1px 0px black;
-	  color: black;
-    text-align: left;
+    padding-left: 5px;
+    text-align: center;
 }
 
 .restpage ul{
+   
+   
+   font-family: 'Oswald', sans-serif;
+    height: 100%;
+    line-height: 100%;
+    font-size: 18px;
+    margin: 10px;
+    padding-right: 30px;
+    padding-left: 25px;
+    text-align: left;
+}
+
+#details{
+  font-family: "Roboto", sans-serif;
+  outline: 10px;
+  width: 100%;
+  border: 5px;
+  margin: 0 0 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 15px;
+}
+
+#infores{
+
+padding-bottom: 5em;
+padding-top: 5em;
+padding-left: 2em;
+}
+
+#total{
+
+  display: inline-flex;
+  margin-top: 2em;
+  margin-left: 3em;
+}
+
+#informations{
+  display: block;
+  margin-top: 10em;
+}
+
+#infores img{
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+#infores img:hover{
+  width: 300;
+  height: 300;
+}
+
+
+/*Rest page*/
+.oncerestpage{
+   background-image: url("https://wallpaperscraft.com/image/board_black_line_texture_background_wood_55220_2560x1600.jpg");
+  background-size: cover;
+  padding-top: 5%;
+ padding-bottom: 15%;
+   text-shadow: 0px 2px 2px black;
+	  color:ghostwhite;
+    
+  font-family: 'Oswald', sans-serif;
+}
+.oncerestpage h1{
+  font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-left: 5px;
+    text-align: center;
+}
+
+.oncerestpage ul{
+   
    
    font-family: 'Oswald', sans-serif;
     height: 100%;
@@ -323,13 +408,27 @@ list-style: none;
     text-align: left;
 }
 
-#details{
+#r_image{
+  text-align: center;
+  padding: 5em;
+}
+#r_image img{
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+#review{
+  padding-left: 8em;
+  padding: 2em;
+}
+
+#review input {
   font-family: "Roboto", sans-serif;
   outline: 10px;
-  width: 100%;
+  width: 10%;
   border: 5px;
-  margin: 0 0 10px;
-  padding: 15px;
+  margin: 0 0 5px;
+  padding: 5px;
   box-sizing: border-box;
   font-size: 14px;
   border-radius: 15px;
