@@ -14,7 +14,7 @@ foreach($rest as $r){
 <div id="infores">
 
 
-<img src="Imagens/RestImages/<?=$image_path?>" alt="restaurant_pics" width="200" height="200">
+<img src="Imagens/RestImages/<?=$image_path?>" alt="restaurant_pics" width="250" height="250">
 
 </div>
 <div id="informations">
