@@ -10,12 +10,16 @@ $id = $_GET['id'];
 
 $r =  getRestaurantById($id);
 
+
 $image_path =  $r['idRestaurant'] . ".jpg";
 ?>
 
 
 
 <div id="r_informations">
+<a href="./?content=r_edit&id=<?=$id?>">
+<input type="Edit" value="Edit Restaurant!">
+</a>
 <?php    
 echo '<h1>' . $r['name'] . '</h1>';
 ?>
@@ -24,6 +28,7 @@ echo '<h1>' . $r['name'] . '</h1>';
 <img src="Imagens/RestImages/<?=$image_path?>" alt="restaurant_pics" width="300" height="300">
 </div>
 
+<div id"i">
 <?php
 echo '<h4>' . 'Informations: '. '</h4>';
 echo '<ul>' . $r['inf']. '</ul>';
@@ -44,7 +49,7 @@ echo '<h4>' . 'Categories: '. '</h4>';
 echo '<ul>'. $r['categories'] . '</ul>';
 ?>
 </div>
-
+</div>
 <div id="review">
 <form action="/html/tags/html_form_tag_action.cfm" method="post">
 <div>
@@ -52,7 +57,7 @@ echo '<ul>'. $r['categories'] . '</ul>';
 placeholder="Your opinion is important for us... Please leave a review">
 </textarea>
 </div>
-<input type="submit" value="Submit">
+<input type="submit" value="Submit" id="submit">
 </form>
 
 </div>

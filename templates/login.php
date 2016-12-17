@@ -14,5 +14,6 @@
 				<div class="err" id="password_err"></div>
 			</li>
 		</ul>
-	<input type="submit" id="login" value="Login">	</form>
+	<input type="submit" id="login" value="">	
+	</form>
 </div>

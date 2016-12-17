@@ -79,5 +79,13 @@ function changeRestaurantSchedule($id, $newSchedule){
       return $stmt->execute(array($newSchedule, $id));
     }
 
+function updateRestaurant($id, $name, $inf, $contacts, $avg, $schedule, $adress, $category) {
+  global $db;  
+  $stmt = $db->prepare('UPDATE restaurant SET name = ?, inf = ?, contacts = ?, avg = ?, schedule = ?, 
+													 adress = ?,  category = ? WHERE idRestaurant = ?');
+             
+    return $stmt->execute(array($name, $inf,$contacts, $avg, $schedule, $adress, $category,$id));
+	}
+
 	
 ?>

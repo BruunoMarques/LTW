@@ -26,8 +26,14 @@
 			case "about":
 				require_once($config["paths"]["templates"]. "about.php");
 				break;
-      case "r_edit":
+     		case "r_edit":
   				require_once($config["paths"]["templates"]. "restaurant_edit.php");
+  				break;
+			case "u_edit":
+  				require_once($config["paths"]["templates"]. "user_edit.php");
+  				break;
+		    case "new_rest":
+  				require_once($config["paths"]["templates"]. "add_rest.php");
   				break;
         	default:
 				require_once($config["paths"]["templates"]. "home.php");

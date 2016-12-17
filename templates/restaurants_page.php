@@ -1,5 +1,9 @@
 <div class="restpage">
 
+<a href="./?content=new_rest">
+<input id="n_r" type="New Restaurant" value="New Rest!">
+</a>
+
 <?php
 
 include_once($config["paths"]["api"]."restaurant.php");
@@ -12,6 +16,7 @@ foreach($rest as $r){
 ?>
 
 <div id="total">
+
 <div id="infores">
 
 
@@ -24,7 +29,7 @@ foreach($rest as $r){
 <?php    
 echo '<h1>' . $r['name'] . '</h1>';
 //echo '<ul>' . 'Informations:' . $r['inf'].'</ul>';
-echo '<ul>' . 'Contacts: '. $r['phonenumber'] . '</ul>';
+echo '<ul>' . 'Contact: '. $r['phonenumber'] . '</ul>';
 //echo '<ul>' . 'Average Cost:'. $r['averagecost'] . '</ul>';
 //echo '<ul>' . 'Schedule:'. $r['schedule'] . '</ul>';
 //echo '<ul>' . 'Adress:'. $r['adress'] . '</ul>';
