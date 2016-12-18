@@ -8,6 +8,7 @@
 	<script src="<?php echo $config["paths"]["scripts"]?>login.js"></script>
 	<script src="<?php echo $config["paths"]["scripts"]?>register.js"></script>
 	<script src="<?php echo $config["paths"]["scripts"]?>editRestaurant.js"></script>
+	<script src="<?php echo $config["paths"]["scripts"]?>submitReview.js"></script>
 </head>
 
 <body>

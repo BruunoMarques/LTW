@@ -6,16 +6,20 @@
 	include_once("user.php");
 
 	$reviewtext = $_POST["comments"];
-	$idRest = $_POST["restid"];
+	$restid = $_POST["restid"];
 	$userid = $_SESSION['id'];
+	$rating = $_POST["rating"];
 
-	var_dump($userid);
-	var_dump($reviewtext);
-	var_dump($restid);
+	echo $userid;
+	echo $reviewtext;
+	echo $restid;
+	echo $rating;
+
 	if($userid ==null){
 	}
 	else{
-		//insertReview($idRest,$userid,$reviewtext,5);
+		echo "success";
+		insertReview($restid,$userid,$reviewtext,$rating);
 	}
 
 
