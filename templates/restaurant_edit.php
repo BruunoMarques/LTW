@@ -14,8 +14,8 @@
 <img src="Imagens/RestImages/<?=$image_path?>" alt="restaurant_pics" width="300" height="300">
 </div>
 
-<form id="edit" method="post" onsubmit="restcheck()">
-<h2>Edit Restaurant informations</h2>
+<form id="edit" method="post">
+    <h2>Edit Restaurant informations</h2>
     <ul>Restaurant Name:
         <input type="text" name="name" id="name" value="<?=$restaurant['name']?>">
     </ul>
@@ -44,28 +44,9 @@
         <input name="Categories" id="cat" value="<?=$restaurant['categories']?>">
     </ul>
 
-
-    <input type="submit" name="submit" value="" id="buttonSave">
+    <input type="submit" name="submit" value="" id="editrest">
 
 </form>
 
 </div>
-
-<?php
-
-function restcheck(){
-
-$name = $_POST['name'];
-$inf = $_POST['inf'];
-$contacts = $_POST['contact'];
-$avg = $_POST['avg'];
-$schedule = $_POST['schedule'];
-$adress = $_POST['adress'];
-$category = $_POST['cat'];
-
-updateRestaurant($name,$inf,$contacts,$avg,$schedule,$adress,$category);
-
-
-}
-?>
 
