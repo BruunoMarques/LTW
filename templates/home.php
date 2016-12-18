@@ -1,10 +1,16 @@
-<div class="home">
+
+<script src="<?php echo $config["paths"]["scripts"]?>searchbar.js"></script>
+
+<div id="splashtitle" class="home">
 				<h1> Ratatouille </h1>
 				<h2>Find the best restaurant for you!!</h2>
 
- <div class="form">
-        <input type='search' name='search' placeholder='Search restaurant' id='search'>
-      
+ <div id="searchBar">
+		<form action="" method="get">
+        <input type='text' name='searchrestaurant' placeholder='Search Restaurant' id='search'>
+		<ul id="restdisplay">
+		</ul>
+		</form>
 </div>
 </div>
 

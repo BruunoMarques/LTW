@@ -16,6 +16,13 @@ function getReviews(){
     return $rdb->fetchAll();
 }
 
+function getUserReviewsById($id){
+    global $db;
+    $rdb=$db->prepare('SELECT * FROM Review WHERE idReviewer = ?');
+ $rdb->execute(array($id));
+    return $rdb->fetchAll();
+}
+
 function insertReview($id_restaurant,$id_user,$info,$rating){
     global $db;
     $insertReview=$db->prepare('INSERT INTO Review VALUES(NULL,?,?,?,?)');
