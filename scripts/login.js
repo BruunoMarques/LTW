@@ -18,6 +18,7 @@ $(document).ready(function() {
                         $("#password_err").html("Wrong password");
                         break;
                     case 'success':
+                        window.location.href = location.protocol + '//' + location.host + '/?content=profile';
                         break;
                     default:
                         //should never happen
