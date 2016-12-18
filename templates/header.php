@@ -7,6 +7,7 @@
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="<?php echo $config["paths"]["scripts"]?>login.js"></script>
 	<script src="<?php echo $config["paths"]["scripts"]?>register.js"></script>
+	<script src="<?php echo $config["paths"]["scripts"]?>editRestaurant.js"></script>
 </head>
 
 <body>

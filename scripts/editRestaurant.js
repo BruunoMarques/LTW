@@ -1,18 +1,19 @@
 $(document).ready(function() {
     //$(".err").css('display', 'none', 'important');
     $("#editrest").click(function() {
-        name = $("#name").val();
-        info = $("#inf").val();
-        contact = $("#contact").val();
-        avg = $("#avg").val();
-        schedule = $("#schedule").val();
-        address = $("#address").val();
-        categories = $("#cat").val();
+        id = $("#restid").val();
+        name = $("#restname").val();
+        info = $("#restinf").val();
+        contact = $("#restcontact").val();
+        avg = $("#restavg").val();
+        schedule = $("#restschedule").val();
+        address = $("#restaddress").val();
+        categories = $("#restcat").val();
 
         $.ajax({
             type: "POST",
             url: "./api/editRestaurant.php",
-            data: "name=" + name + "&info=" + info + "&contact=" + contact + "&avg=" + avg + "&schedule=" + schedule + "&address=" + address + "&categories=" + categories,
+            data: "id=" + id + "&name=" + name + "&info=" + info + "&contact=" + contact + "&avg=" + avg + "&schedule=" + schedule + "&address=" + address + "&categories=" + categories,
             success: function(data) {
                 console.log(data);
                 switch (data) {
