@@ -28,6 +28,7 @@ $(document).ready(function() {
                         $("#email_err").html("Email already exists");
                         break;
                     case 'success':
+                        window.location.href = location.protocol + '//' + location.host + '/?content=registersuccess';
                         break;
                     default:
                         //should never happen

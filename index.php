@@ -35,6 +35,9 @@
 		    case "new_rest":
   				require_once($config["paths"]["templates"]. "add_rest.php");
   				break;
+			case "registersuccess":
+				require_once($config["paths"]["templates"]. "registersuccess.php");
+  				break;
         	default:
 				require_once($config["paths"]["templates"]. "home.php");
         	    break;

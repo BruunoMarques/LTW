@@ -1,5 +1,5 @@
 <?php
-
+include_once("connection.php");
 include_once("user.php");
 
 
@@ -10,9 +10,6 @@ $password =$_POST["password"];
 $confirm_password = $_POST["confirm_password"];
 $email = $_POST["email"];
 
-var_dump($password);
-var_dump($confirm_password);
-
 
 if (strlen($username) < 20 && strlen($firstname) < 20 && strlen($lastname) < 20){
 	
@@ -20,10 +17,10 @@ if (strlen($username) < 20 && strlen($firstname) < 20 && strlen($lastname) < 20)
 		
 		$pass = password_hash($password,PASSWORD_DEFAULT);
 		
-		if (getUserByUsername($username) == 0){
+		if (getUserByUsername($username)){
 			echo 'usr exists';
 		} else{
-			if (getUserByEmail($email) == 0){
+			if (getUserByEmail($email)){
 				echo 'email exists';
 			}
 			else{
