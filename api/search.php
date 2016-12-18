@@ -1,6 +1,7 @@
 <?php
-	include("restaurant.php");
-	include("compareRestaurants.php");
+	include_once("connection.php");
+	include_once("restaurant.php");
+	include_once("compareRestaurants.php");
 	
 	$currName = htmlspecialchars($_GET['searchval']);
 	if($currName == null) $currName = "";
