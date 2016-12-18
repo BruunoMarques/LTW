@@ -27,9 +27,9 @@
 					<?php
     	    			if (isset($_SESSION['id'])){
 					?>
-							<li> Welcome <a href="./?content=profile&id=<?php echo $_SESSION['id'] ?>"><?php echo $_SESSION['name']?></a>! </li>
+							<li> Welcome <a href="./?content=profile"><?php echo $_SESSION['name']?></a>! </li>
 							<li> <a href="./?content=profile">Profile</a></li>
-							<li> <a href="">Logout</a></li>
+							<li> <a href="./api/logout.php">Logout</a></li>
 					<?php
     	    			} else {
 					?>

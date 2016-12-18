@@ -6,7 +6,7 @@
         include_once($config["paths"]["api"]."review.php");
         include_once($config["paths"]["api"]."user.php");
 
-        $id = $_GET['id'];
+        $id = $_SESSION["id"];
         $u =  getUserById($id)
 
     ?>
