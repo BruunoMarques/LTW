@@ -7,7 +7,6 @@ include_once($config["paths"]["api"]."review.php");
 include_once($config["paths"]["api"]."user.php");
 
 $id = $_GET['id'];
-
 $r =  getRestaurantById($id);
 
 
@@ -51,13 +50,14 @@ echo '<ul>'. $r['categories'] . '</ul>';
 </div>
 </div>
 <div id="review">
-<form action="/html/tags/html_form_tag_action.cfm" method="post">
+<form id="revform"action="api/add_review.php" method="post">
 <div>
 <textarea  cols='60' rows='3'name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;"
 placeholder="Your opinion is important for us... Please leave a review">
 </textarea>
 </div>
-<input type="submit" value="Submit" id="submit">
+<input type="hidden" name="restid" id="restid" value="<?php echo $id ?>" />
+<button type="submit" name="id" value="Submit"> Submit </button>
 </form>
 
 </div>
@@ -68,9 +68,13 @@ placeholder="Your opinion is important for us... Please leave a review">
 
 $rv = getReviewsById($id);
 
-foreach($rv as $r){
-    
-   $user = getUserById($id);
+if($rv == null){
+	echo '<h3> No Reviews yet, be the first!! </h3>';
+}
+else {
+	foreach($rv as $r){
+     $idreviewer = $r['idReviewer'];
+	 $user = getUserById($idreviewer);
      $name = $user['firstname'];
      $name .=" ";
      $name .= $user['lastname'];
@@ -80,6 +84,9 @@ echo '<h4>' . 'Rating: '.'</h4>';
 echo '<ul>' . $r['rating'] . '</ul>'; 
 echo '<h4>' . 'Description: '.'</h4>';
 echo '<ul>' . $r['info']  . '</ul>'; 
+}
+
+
 
 }
 ?>
