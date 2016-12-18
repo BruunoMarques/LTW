@@ -65,6 +65,7 @@ placeholder="Your opinion is important for us... Please leave a review">
 <div id="reviews">
 <h2> Reviews about this Restaurant: </h2>
 <?php
+
 $rv = getReviewsById($id);
 
 foreach($rv as $r){

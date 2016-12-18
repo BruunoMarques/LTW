@@ -25,8 +25,23 @@ function getUserReviewsById($id){
 
 function insertReview($id_restaurant,$id_user,$info,$rating){
     global $db;
-    $insertReview=$db->prepare('INSERT INTO Review VALUES(NULL,?,?,?,?)');
-    $insertReview->execute([$id_restaurant,$id_user,$info,$rating]);
-    return $insertReview->errorCode();
+    $rdb=$db->prepare('INSERT INTO Review VALUES(NULL,?,?,?,?)');
+    $rdb->execute([$id_restaurant,$id_user,$info,$rating]);
+    return $rdb->errorCode();
+}
+
+
+function averageValue($id_restaurant){
+	global $db;
+	$rdb=$db->prepare('SELECT AVG(rating) FROM Review WHERE idRestaurant = ?');
+	$rdb->execute([$id_restaurant]);
+	return $rdb;
+}
+
+function averageGood(){
+	global $db;
+	$rdb=$db->prepare('SELECT idRestaurant FROM Review WHERE rating > 3 ');
+	$rdb->execute([$id_restaurant]);
+	return $rdb;
 }
 ?>

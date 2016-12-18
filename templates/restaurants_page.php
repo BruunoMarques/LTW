@@ -1,7 +1,7 @@
 <div class="restpage">
 
 <a href="./?content=new_rest">
-<input id="n_r" type="New Restaurant" value="New Rest!">
+<input id="n_r" type="New Restaurant" value="New Restaurant!">
 </a>
 
 <?php

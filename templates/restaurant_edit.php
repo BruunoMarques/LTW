@@ -65,7 +65,6 @@ $category = $_POST['cat'];
 
 updateRestaurant($name,$inf,$contacts,$avg,$schedule,$adress,$category);
 
-echo($name);
 
 }
 ?>

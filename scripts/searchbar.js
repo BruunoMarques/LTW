@@ -25,16 +25,15 @@ function processInput(input){
 		var dataparse = JSON.parse(data);
 		var Slist = $("#restdisplay");
 		if(typeof dataparse == "string"){
-			$("li").remove();
+			$("#splashtitle #searchBar li").remove();
 			Slist.before('<p><li>'+dataparse+'</li></p>');
 		}
 		else{
-			$("li").remove();
+			$("#splashtitle #searchBar li").remove();
 			Slist.before('<p>');
 			
 			for (var i = 0; i < dataparse.length;i+=2){
-				console.log(dataparse);
-				$url = "templates/restaurant_page.php?id="+ dataparse[i+1];
+				$url = "?content=restaurant&id="+ dataparse[i+1];
 				if( (i+1)%4 == 0 && i >= 3) Slist.before('<p>');
 				Slist.before('<li><button type="submit" formaction="'+$url +'">'+ dataparse[i]+' </li>');
 				if((i+1) % 4 == 0 && i >= 3) Slist.before('</p>');
