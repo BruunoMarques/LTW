@@ -6,8 +6,7 @@ include_once($config["paths"]["api"]."restaurant.php");
 include_once($config["paths"]["api"]."review.php");
 include_once($config["paths"]["api"]."user.php");
 
-//$id = $_GET['id'];
-$id = 1;
+$id = $_GET['id'];
 $u =  getUserById($id)
 
 ?>
@@ -25,19 +24,18 @@ $u =  getUserById($id)
 
     <?php
         echo '<h4>' . 'Username:  '. '</h4>';
-    echo '<ul>'. $u['username'] . '</ul>';
+        echo '<ul>'. $u['username'] . '</ul>';
 
-    echo '<h4>' . 'Email: '. '</h4>';
-    echo '<ul>' . $u['email']. '</ul>';
+        echo '<h4>' . 'Email: '. '</h4>';
+        echo '<ul>' . $u['email']. '</ul>';
 
-    echo '<h2>' . 'My Restaurants:  '. '</h2>';
+        echo '<h2>' . 'My Restaurants:  '. '</h2>';
 
-    echo '<h2>' . 'My Reviews:  '. '</h2>';
+        echo '<h2>' . 'My Reviews:  '. '</h2>';
 
-    $rv = getUserReviewsById($id);
+        $rv = getUserReviewsById($id);
 
-    foreach($rv as $review){
-
+        foreach($rv as $review){
     ?>
     <form id="rev">
         <?php
