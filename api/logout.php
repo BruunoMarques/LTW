@@ -3,5 +3,6 @@ session_start();
 session_unset();
 session_destroy();
 
-header("../index.php");
+header("location:../index.php");
+exit();
 ?>
