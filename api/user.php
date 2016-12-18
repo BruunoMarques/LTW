@@ -1,6 +1,4 @@
 <?php
-//include_once('connection.php');
-
 
 function getUsers(){
     global $db;
