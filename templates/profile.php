@@ -6,8 +6,7 @@ include_once($config["paths"]["api"]."restaurant.php");
 include_once($config["paths"]["api"]."review.php");
 include_once($config["paths"]["api"]."user.php");
 
-//$id = $_GET['id'];
-$id = 1;
+$id = $_GET['id'];
 $u =  getUserById($id)
 
 ?>
