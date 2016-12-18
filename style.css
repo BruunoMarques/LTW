@@ -108,7 +108,7 @@ nav {
 .home h1 {
     text-shadow: 0px 2px 4px black;
     color: white;
-   font-family: 'Molengo', Georgia, Times, serif;
+    font-family: 'Molengo', Georgia, Times, serif;
     font-size: 90px;
 }
 
@@ -791,4 +791,51 @@ cursor:pointer;
 background: url("https://cdn0.iconfinder.com/data/icons/simply-orange-1/128/Artboard_9svg-128.png") no-repeat 1px 1px;
 transform: scale(0.5,0.5);
 align-self: center;
+}
+
+
+/*About page*/
+#about{
+    display: block;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    background-color: white;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    text-shadow: 0px 0px 1px black;
+    color: black;
+    font-family: 'Molengo', Georgia, Times, serif;
+}
+
+#about h1{
+    font-size: 60px;
+    padding-left: 30%;
+}
+
+#about p{
+    font-size: 20px;
+    padding-top: 3em;
+    padding-left: 1em;
+}
+
+#about ul {
+    list-style: none;
+    display: list-item;
+}
+
+#about li {
+    font-family: 'Molengo', Georgia, Times, serif;
+    height: 100%;
+    font-size: 18px;
+    padding-left: 10%;
+}
+#about_inf{
+    padding-right: 20em;
+    display: list-item;
+    list-style: none;
+}
+
+#about_image{
+    display: inline-flex;
 }
